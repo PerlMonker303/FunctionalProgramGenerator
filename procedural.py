@@ -1,4 +1,5 @@
 import re
+import subprocess
 
 dbg = False
 MAX_DEPTH = 100
@@ -24,7 +25,7 @@ def parse_sexp(sexp):
             stack.append(out)
             out = []
         elif term == 'brackr':
-            assert stack, "Trouble with nesting of brackets"
+            assert stack, "Invalid: Trouble with nesting of brackets"
             tmpout, out = out, stack.pop(-1)
             out.append(tmpout)
         elif term == 'num':
@@ -36,8 +37,8 @@ def parse_sexp(sexp):
         elif term == 's':
             out.append(value)
         else:
-            raise NotImplementedError("Error: %r" % (term, value))
-    assert not stack, "Trouble with nesting of brackets"
+            raise NotImplementedError("Invalid: %r" % (term, value))
+    assert not stack, "Invalid: Trouble with nesting of brackets"
     return out[0]
 
 def print_sexp(exp):
@@ -49,6 +50,22 @@ def print_sexp(exp):
     else:
         out += '%s' % exp
     return out
+
+
+def convert_flat_list_helper(flat_list):
+    if len(flat_list) == 0:
+        return []
+
+    first_element = flat_list[0]
+    if first_element == '(':
+        return [ convert_flat_list_helper(flat_list[1:len(flat_list)-1]) ]
+
+    return [first_element] + convert_flat_list_helper(flat_list[1:])
+
+def convert_flat_list_expression_to_imbricated_expression(flat_list):
+    # Assumption: brackets are placed correctly
+    return convert_flat_list_helper(flat_list)[0]
+
 
 def compare(operator, left, right):
     if operator == '<':
@@ -145,6 +162,23 @@ def evaluate_expression(exp, env=None, depth=0, tokens=None):
         return exp
 
 
+def eval_sexpression(sexpr):
+    result = subprocess.run(["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
+                             "--noinform",  # skip printing initial strings
+                             "--eval",
+                             f"(print {sexpr})",
+                             "--quit",  # exit REPL after evaluation
+                             "--disable-debugger"],  # if error, skip debugger
+                            capture_output=True, text=True)
+    if result.stderr:
+        return "Invalid: " + result.stderr
+    if result.stdout:
+        res = result.stdout.replace("\n", "")
+        return res
+
+    return "Invalid execution."
+
+
 def test(s_exp, expected_exp_parsed, expected_eval_result=0, env=None, should_be_invalid=False, verbose=False):
     tokens = [set()]
     parsed_exp = parse_sexp(s_exp)
@@ -178,11 +212,19 @@ def test_function(s_exp, expected_exp_parsed, func_call_exp, expected_eval_resul
     verbose and print(f'Parsed function call: {func_call_exp_parsed}')
     tokens = [set()]
     eval_result = evaluate_expression(func_call_exp_parsed, env, depth=0, tokens=tokens)
+    print(tokens)
     verbose and print(f'Evaluation result: {eval_result}')
     assert expected_eval_result == eval_result
 
 
 def run_tests():
+
+    # Test flat-list converter
+    assert convert_flat_list_expression_to_imbricated_expression(['(', ')']) == []
+    assert convert_flat_list_expression_to_imbricated_expression(['(', '1', ')']) == ['1']
+    assert convert_flat_list_expression_to_imbricated_expression(['(', '1', '(', '2', ')', ')']) == ['1', ['2']]
+    assert convert_flat_list_expression_to_imbricated_expression(['(', '(', '(', '(', ')', ')', ')', ')']) == [[[[]]]]
+
     # Test arithmetic operations
     test(
         s_exp="(+ 1 (* 5 (- 9 1)) 3 4)",
