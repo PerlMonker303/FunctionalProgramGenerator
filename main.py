@@ -1,6 +1,6 @@
 import random
 
-from TestCase import TestCase
+from test_case import TestCase
 from procedural import eval_sexpression
 
 LENGTH_OF_GENE_LOWER_BOUND = 4
@@ -16,10 +16,7 @@ class GeneticAlgorithm:
         self.tokens = tokens
         self.tokens_list = list(tokens)
 
-    def create_candidate(self, tokens):
-        # Note: Must use all tokens in the form of a list for random.choice to work.
-        tokens_list = list(tokens)
-
+    def create_candidate(self):
         # First randomly generate length of candidate
         length = random.randint(LENGTH_OF_GENE_LOWER_BOUND, LENGTH_OF_GENE_UPPER_BOUND)
 
@@ -30,7 +27,7 @@ class GeneticAlgorithm:
         while i < length - 1:
             if length - i == open_brackets_count:
                 break
-            gene = random.choice(tokens_list)
+            gene = random.choice(self.tokens_list)
             if gene == '(':
                 open_brackets_count += 1
             elif gene == ')':
@@ -48,10 +45,10 @@ class GeneticAlgorithm:
 
         return candidate
 
-    def create_initial_pool(self, tokens):
+    def create_initial_pool(self):
         candidates_pool = []
         for _ in range(self.pool_size):
-            candidates_pool.append(self.create_candidate(tokens))
+            candidates_pool.append(self.create_candidate())
 
         return candidates_pool
 
@@ -118,7 +115,7 @@ class GeneticAlgorithm:
         print(f"[Algorithm start]")
 
         # Initialise candidates pool
-        candidates_pool = self.create_initial_pool(self.tokens)
+        candidates_pool = self.create_initial_pool()
 
         for gen_id in range(self.num_generations):
             print(f"[Generation {gen_id}]")

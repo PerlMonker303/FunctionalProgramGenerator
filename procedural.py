@@ -162,14 +162,36 @@ def evaluate_expression(exp, env=None, depth=0, tokens=None):
         return exp
 
 
-def eval_sexpression(sexpr):
-    result = subprocess.run(["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
-                             "--noinform",  # skip printing initial strings
-                             "--eval",
-                             f"(print {sexpr})",
-                             "--quit",  # exit REPL after evaluation
-                             "--disable-debugger"],  # if error, skip debugger
-                            capture_output=True, text=True)
+def eval_sexpression(sexpr, add_function_call=False, f_name="factorial", input=0):
+    if add_function_call:
+        params_list = ["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
+                       "--noinform",  # skip printing initial strings
+                       "--control-stack-size",
+                       "1",
+                       "--eval",
+                       "(declaim (sb-ext:muffle-conditions cl:warning))",  # suppress warnings
+                       "--eval",
+                       f"{sexpr}",
+                       "--eval",
+                       f"(print ({f_name} {input}))",
+                       "--quit",  # exit REPL after evaluation
+                       "--disable-debugger"],  # if error, skip debugger
+    else:
+        params_list = ["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
+                       "--noinform",  # skip printing initial strings
+                       "--control-stack-size",
+                       "1",
+                       "--eval",
+                       "(declaim (sb-ext:muffle-conditions cl:warning))",  # suppress warnings
+                       "--eval",
+                       f"(print {sexpr})",
+                       "--quit",  # exit REPL after evaluation
+                       "--disable-debugger"],  # if error, skip debugger
+
+    try:
+        result = subprocess.run(params_list[0], capture_output=True, text=True, timeout=1)  # Added timeout for infinite recursion
+    except subprocess.TimeoutExpired:
+        return "Invalid: timeout exception."
     if result.stderr:
         return "Invalid: " + result.stderr
     if result.stdout:
