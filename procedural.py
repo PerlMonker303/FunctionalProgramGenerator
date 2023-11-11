@@ -166,8 +166,6 @@ def eval_sexpression(sexpr, add_function_call=False, f_name="factorial", input=0
     if add_function_call:
         params_list = ["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
                        "--noinform",  # skip printing initial strings
-                       "--control-stack-size",
-                       "1",
                        "--eval",
                        "(declaim (sb-ext:muffle-conditions cl:warning))",  # suppress warnings
                        "--eval",
@@ -179,8 +177,6 @@ def eval_sexpression(sexpr, add_function_call=False, f_name="factorial", input=0
     else:
         params_list = ["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
                        "--noinform",  # skip printing initial strings
-                       "--control-stack-size",
-                       "1",
                        "--eval",
                        "(declaim (sb-ext:muffle-conditions cl:warning))",  # suppress warnings
                        "--eval",

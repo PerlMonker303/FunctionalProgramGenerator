@@ -9,12 +9,12 @@ Developed for the AI in Software Engineering course for my MSc. course.
 - check validity of S-expression (using "parse_sexp" or pre-existing compiler "SBCL")
 - use an existing lisp compiler to ensure program correctness and output (difficult to implement everything)
 - considered a different chromosome representation: s-expressions
-- mutation techniques: shrink, subtree
+- mutation techniques: shrink, subtree, swap
 - inserted perfect candidate in initial pool and see what happens
+- cache fitness computations for candidates without changes - use unique candidate ids
+- improved mutation fairness
 
 ## TODOs:
-- change way mutation change at a node is computed, right now it's not fair and most likely to obtain small trees
-- (LEFT IN PROGRESS - NOT URGENT) cache fitness computations for candidates without changes
 - (DEPRECATED) more operators: cutting a list (cdr or car or something) - depends on what data is used
 - apply on github with real LISP code (ex: https://github.com/Pufcorina/Functional-and-Logic-Programming/blob/master/L1/11.lisp) 
 
