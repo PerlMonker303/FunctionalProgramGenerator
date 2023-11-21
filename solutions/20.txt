@@ -1,0 +1,1483 @@
+D:\Anaconda\envs\tf_gpu\python.exe D:/An2Sem1M/sweai/lab2/FunctionalProgramGenerator/main_tree.py
+[Algorithm start]
+[Initial pool]
+(CANDIDATE)[id: 0
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 1
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 2
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 3
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 4
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`x`#`#`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (- x y) y))
+ nr_nodes: 6]
+(CANDIDATE)[id: 5
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(- ? ?)`(+ ? ?)`y`#`#`6`#`#`(- ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* x (- (+ y 6) (- y x))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 6
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 7
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 8
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 9
+ encoding: (defun my_func (x y) ?)`(- ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- 6 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 10
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`(+ ? ?)`(+ ? ?)`6`#`#`6`#`#`6`#`#`(* ? ?)`(- ? ?)`x`#`#`x`#`#`(* ? ?)`6`#`#`y`#`#`(- ? ?)`(+ ? ?)`y`#`#`(* ? ?)`y`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (* (+ (+ 6 6) 6) (* (- x x) (* 6 y))) (- (+ y (* y 6)) x)))
+ nr_nodes: 22]
+(CANDIDATE)[id: 11
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 12
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(* ? ?)`6`#`#`(- ? ?)`x`#`#`(* ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* x (* 6 (- x (* x 6)))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 13
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`(- ? ?)`6`#`#`6`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (- (- 6 6) y) x))
+ nr_nodes: 8]
+(CANDIDATE)[id: 14
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 15
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- x 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 16
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 17
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 18
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`6`#`#`x`#`#`(- ? ?)`(* ? ?)`y`#`#`6`#`#`(* ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (+ 6 x) (- (* y 6) (* y y))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 19
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(+ ? ?)`x`#`#`6`#`#`6`#`#`(- ? ?)`y`#`#`(- ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (+ x 6) 6) (- y (- 6 y))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 20
+ encoding: (defun my_func (x y) ?)`(- ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- 6 x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 21
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(* ? ?)`(- ? ?)`x`#`#`y`#`#`x`#`#`x`#`#`(+ ? ?)`(+ ? ?)`y`#`#`x`#`#`(- ? ?)`(* ? ?)`x`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (* (- x y) x) x) (+ (+ y x) (- (* x 6) y))))
+ nr_nodes: 18]
+(CANDIDATE)[id: 22
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ x y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 23
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 24
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`(* ? ?)`y`#`#`(+ ? ?)`(- ? ?)`6`#`#`6`#`#`(* ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* y (* y (+ (- 6 6) (* 6 6)))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 25
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`(- ? ?)`y`#`#`6`#`#`y`#`#`(* ? ?)`(* ? ?)`y`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* (+ (- y 6) y) (* (* y x) 6)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 26
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`(* ? ?)`(+ ? ?)`x`#`#`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- y (* (+ x y) y)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 27
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(- ? ?)`6`#`#`x`#`#`(* ? ?)`x`#`#`y`#`#`(* ? ?)`y`#`#`(* ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (- 6 x) (* x y)) (* y (* 6 y))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 28
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 29
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 30
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`(* ? ?)`x`#`#`6`#`#`(- ? ?)`x`#`#`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (* (* x 6) (- x y)) 6))
+ nr_nodes: 10]
+(CANDIDATE)[id: 31
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`(+ ? ?)`y`#`#`(+ ? ?)`6`#`#`y`#`#`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (- (+ y (+ 6 y)) y) 6))
+ nr_nodes: 10]
+(CANDIDATE)[id: 32
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 33
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`6`#`#`(- ? ?)`y`#`#`(+ ? ?)`x`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (* 6 (- y (+ x y))) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 34
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`(- ? ?)`x`#`#`(+ ? ?)`(+ ? ?)`y`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- x (- x (+ (+ y x) 6))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 35
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 36
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 37
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 38
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 39
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`(- ? ?)`(- ? ?)`6`#`#`y`#`#`(+ ? ?)`x`#`#`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ (- (- 6 y) (+ x x)) x) x))
+ nr_nodes: 12]
+(CANDIDATE)[id: 40
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`y`#`#`(- ? ?)`x`#`#`(+ ? ?)`y`#`#`y`#`#`(* ? ?)`(+ ? ?)`6`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (* y (- x (+ y y))) (* (+ 6 6) y)))
+ nr_nodes: 14]
+(CANDIDATE)[id: 41
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`6`#`#`(- ? ?)`(+ ? ?)`y`#`#`y`#`#`(+ ? ?)`y`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* (+ 6 (- (+ y y) (+ y x))) 6))
+ nr_nodes: 12]
+(CANDIDATE)[id: 42
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 43
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`6`#`#`(* ? ?)`x`#`#`x`#`#`(- ? ?)`(* ? ?)`y`#`#`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (* 6 (* x x)) (- (* y 6) 6)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 44
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(+ ? ?)`x`#`#`x`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (+ x x) 6) y))
+ nr_nodes: 8]
+(CANDIDATE)[id: 45
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 46
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(- ? ?)`y`#`#`y`#`#`(- ? ?)`6`#`#`y`#`#`(* ? ?)`y`#`#`(+ ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (- y y) (- 6 y)) (* y (+ x x))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 47
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* 6 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 48
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* 6 x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 49
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 50
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`(+ ? ?)`y`#`#`y`#`#`(- ? ?)`(* ? ?)`y`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x (+ y y)) (- (* y y) x)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 51
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x x) x))
+ nr_nodes: 6]
+(CANDIDATE)[id: 52
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`6`#`#`(+ ? ?)`6`#`#`6`#`#`(+ ? ?)`(+ ? ?)`x`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (- 6 (+ 6 6)) (+ (+ x x) 6)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 53
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 54
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`y`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (* y y) x))
+ nr_nodes: 6]
+(CANDIDATE)[id: 55
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 56
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 57
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 58
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 59
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- x x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 60
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- x y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 61
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 62
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 63
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 64
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 65
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 66
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`(- ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* 6 (- x 6)))
+ nr_nodes: 6]
+(CANDIDATE)[id: 67
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`6`#`#`(+ ? ?)`(* ? ?)`x`#`#`x`#`#`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* (* 6 (+ (* x x) 6)) 6))
+ nr_nodes: 10]
+(CANDIDATE)[id: 68
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 69
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`y`#`#`(* ? ?)`y`#`#`(+ ? ?)`x`#`#`y`#`#`(* ? ?)`(* ? ?)`(- ? ?)`x`#`#`6`#`#`6`#`#`(* ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (* y (* y (+ x y))) (* (* (- x 6) 6) (* 6 6))))
+ nr_nodes: 18]
+(CANDIDATE)[id: 70
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 71
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 72
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 73
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 74
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 75
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`6`#`#`(- ? ?)`y`#`#`6`#`#`(+ ? ?)`6`#`#`(* ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (* 6 (- y 6)) (+ 6 (* x x))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 76
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(* ? ?)`y`#`#`(- ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ y (* y (- y y))))
+ nr_nodes: 8]
+(CANDIDATE)[id: 77
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 78
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`6`#`#`(- ? ?)`(- ? ?)`6`#`#`x`#`#`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (* 6 (- (- 6 x) y)) y))
+ nr_nodes: 10]
+(CANDIDATE)[id: 79
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`6`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (+ 6 x) 6))
+ nr_nodes: 6]
+(CANDIDATE)[id: 80
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(+ ? ?)`(- ? ?)`(* ? ?)`6`#`#`x`#`#`y`#`#`(- ? ?)`x`#`#`(+ ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ y (+ (- (* 6 x) y) (- x (+ y x)))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 81
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 82
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 83
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`(+ ? ?)`(* ? ?)`(* ? ?)`y`#`#`y`#`#`(- ? ?)`y`#`#`y`#`#`(* ? ?)`(* ? ?)`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 (+ (* (* y y) (- y y)) (* (* x x) x))))
+ nr_nodes: 16]
+(CANDIDATE)[id: 84
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 85
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 86
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`(* ? ?)`(- ? ?)`y`#`#`6`#`#`(+ ? ?)`x`#`#`6`#`#`(- ? ?)`x`#`#`y`#`#`(- ? ?)`(- ? ?)`6`#`#`6`#`#`(- ? ?)`(- ? ?)`y`#`#`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (* (* (- y 6) (+ x 6)) (- x y)) (- (- 6 6) (- (- y 6) 6))))
+ nr_nodes: 22]
+(CANDIDATE)[id: 87
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`y`#`#`(* ? ?)`(- ? ?)`x`#`#`x`#`#`(- ? ?)`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x y) (* (- x x) (- x y))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 88
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 89
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 90
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`y`#`#`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (+ y y) y))
+ nr_nodes: 6]
+(CANDIDATE)[id: 91
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`6`#`#`(* ? ?)`y`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* 6 (* y 6)) x))
+ nr_nodes: 8]
+(CANDIDATE)[id: 92
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`(+ ? ?)`x`#`#`y`#`#`(+ ? ?)`(* ? ?)`x`#`#`6`#`#`6`#`#`(+ ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (* (+ x y) (+ (* x 6) 6)) (+ 6 6)))
+ nr_nodes: 14]
+(CANDIDATE)[id: 93
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* y 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 94
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(- ? ?)`(+ ? ?)`y`#`#`x`#`#`y`#`#`(- ? ?)`(- ? ?)`x`#`#`6`#`#`(+ ? ?)`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (- (+ y x) y) (- (- x 6) (+ x y))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 95
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(- ? ?)`6`#`#`(+ ? ?)`(+ ? ?)`6`#`#`x`#`#`(- ? ?)`6`#`#`y`#`#`(* ? ?)`(- ? ?)`y`#`#`x`#`#`(+ ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* (- 6 (+ (+ 6 x) (- 6 y))) (* (- y x) (+ x 6))))
+ nr_nodes: 18]
+(CANDIDATE)[id: 96
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`6`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (* 6 6) y))
+ nr_nodes: 6]
+(CANDIDATE)[id: 97
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 98
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 99
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`(* ? ?)`(* ? ?)`6`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* 6 (* (* 6 6) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 100
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 101
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`6`#`#`(- ? ?)`x`#`#`6`#`#`(- ? ?)`y`#`#`(* ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ 6 (- x 6)) (- y (* 6 x))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 102
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`(* ? ?)`(* ? ?)`y`#`#`6`#`#`(* ? ?)`(* ? ?)`x`#`#`x`#`#`(+ ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* 6 (* (* y 6) (* (* x x) (+ x 6)))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 103
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 104
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(* ? ?)`x`#`#`(* ? ?)`y`#`#`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (* x (* y 6)) x) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 105
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 106
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* x y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 107
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- y y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 108
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 109
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`x`#`#`(* ? ?)`(+ ? ?)`6`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ x (* (+ 6 y) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 110
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 111
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 112
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 113
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 114
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 115
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 116
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 117
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`(+ ? ?)`(- ? ?)`(* ? ?)`6`#`#`6`#`#`(* ? ?)`y`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- x (+ (- (* 6 6) (* y x)) y)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 118
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 119
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 120
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- y y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 121
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 122
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 123
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 124
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 125
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(* ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y (* x 6)))
+ nr_nodes: 6]
+(CANDIDATE)[id: 126
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x 6) y))
+ nr_nodes: 6]
+(CANDIDATE)[id: 127
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* 6 y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 128
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`6`#`#`6`#`#`(- ? ?)`6`#`#`(* ? ?)`x`#`#`(+ ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* 6 6) (- 6 (* x (+ y x)))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 129
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 130
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`(* ? ?)`(- ? ?)`y`#`#`6`#`#`(- ? ?)`x`#`#`6`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (* (* (- y 6) (- x 6)) x) y))
+ nr_nodes: 12]
+(CANDIDATE)[id: 131
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 132
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 133
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 134
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 135
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 136
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`y`#`#`6`#`#`(+ ? ?)`(* ? ?)`6`#`#`(+ ? ?)`x`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* y 6) (+ (* 6 (+ x 6)) x)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 137
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 138
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(+ ? ?)`(- ? ?)`6`#`#`y`#`#`(- ? ?)`6`#`#`(+ ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* x (+ (- 6 y) (- 6 (+ 6 y)))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 139
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 140
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 141
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`(* ? ?)`x`#`#`x`#`#`(* ? ?)`6`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (+ (* x x) (* 6 6)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 142
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 143
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ x x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 144
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`(* ? ?)`x`#`#`(* ? ?)`6`#`#`x`#`#`(* ? ?)`(* ? ?)`y`#`#`6`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (- (* x (* 6 x)) (* (* y 6) x)) y))
+ nr_nodes: 14]
+(CANDIDATE)[id: 145
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* x 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 146
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`(+ ? ?)`(- ? ?)`x`#`#`y`#`#`y`#`#`(- ? ?)`(- ? ?)`6`#`#`x`#`#`(+ ? ?)`x`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (- (+ (- x y) y) (- (- 6 x) (+ x x))) y))
+ nr_nodes: 16]
+(CANDIDATE)[id: 147
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 148
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 149
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`(* ? ?)`(- ? ?)`y`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 (* (- y x) 6)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 150
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 151
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 152
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 153
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 154
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 155
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 156
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`(- ? ?)`x`#`#`(* ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* y (- x (* 6 6))))
+ nr_nodes: 8]
+(CANDIDATE)[id: 157
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`(+ ? ?)`6`#`#`6`#`#`(* ? ?)`y`#`#`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ (+ 6 6) (* y x)) (* (* 6 y) x)))
+ nr_nodes: 14]
+(CANDIDATE)[id: 158
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 159
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ y y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 160
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 161
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 162
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 163
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 164
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`(+ ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 (+ 6 y)))
+ nr_nodes: 6]
+(CANDIDATE)[id: 165
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 166
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 167
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 168
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 169
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 170
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 171
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 172
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 173
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 174
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 175
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`y`#`#`(+ ? ?)`(- ? ?)`6`#`#`x`#`#`y`#`#`(+ ? ?)`(+ ? ?)`x`#`#`(- ? ?)`x`#`#`x`#`#`(* ? ?)`(* ? ?)`6`#`#`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* (+ y (+ (- 6 x) y)) (+ (+ x (- x x)) (* (* 6 6) 6))))
+ nr_nodes: 20]
+(CANDIDATE)[id: 176
+ encoding: (defun my_func (x y) ?)`(- ? ?)`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- 6 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 177
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 178
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 179
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* y (* (* 6 x) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 180
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 181
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 182
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`6`#`#`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (- 6 y) 6))
+ nr_nodes: 6]
+(CANDIDATE)[id: 183
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 184
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`(* ? ?)`(- ? ?)`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- x (* (- x x) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 185
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`x`#`#`y`#`#`(- ? ?)`y`#`#`(* ? ?)`x`#`#`(- ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (* x y) (- y (* x (- y y)))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 186
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`x`#`#`(+ ? ?)`6`#`#`(- ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x x) (+ 6 (- 6 x))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 187
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(- ? ?)`(* ? ?)`x`#`#`x`#`#`(* ? ?)`x`#`#`6`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (- (* x x) (* x 6)) x) y))
+ nr_nodes: 12]
+(CANDIDATE)[id: 188
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 189
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 190
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`(* ? ?)`6`#`#`y`#`#`y`#`#`(* ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (* (* 6 y) y) (* 6 y)))
+ nr_nodes: 10]
+(CANDIDATE)[id: 191
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 192
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* y y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 193
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 194
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 195
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 196
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(- ? ?)`(- ? ?)`(+ ? ?)`x`#`#`x`#`#`y`#`#`(- ? ?)`(- ? ?)`6`#`#`x`#`#`(- ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* x (- (- (+ x x) y) (- (- 6 x) (- x 6)))))
+ nr_nodes: 16]
+(CANDIDATE)[id: 197
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 198
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`y`#`#`(* ? ?)`x`#`#`6`#`#`(- ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (+ y (* x 6)) (- y y)))
+ nr_nodes: 10]
+(CANDIDATE)[id: 199
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(- ? ?)`6`#`#`(- ? ?)`y`#`#`y`#`#`(+ ? ?)`(+ ? ?)`y`#`#`x`#`#`6`#`#`(+ ? ?)`(- ? ?)`y`#`#`x`#`#`(+ ? ?)`(+ ? ?)`6`#`#`6`#`#`(+ ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (- 6 (- y y)) (+ (+ y x) 6)) (+ (- y x) (+ (+ 6 6) (+ x 6)))))
+ nr_nodes: 24]
+(CANDIDATE)[id: 200
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`x`#`#`(- ? ?)`x`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (* x (- x 6)) y))
+ nr_nodes: 8]
+(CANDIDATE)[id: 201
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 202
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 203
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 204
+ encoding: (defun my_func (x y) ?)`(- ? ?)`x`#`#`(- ? ?)`(- ? ?)`y`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- x (- (- y 6) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 205
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 206
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 207
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 208
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 209
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 210
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 211
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 212
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(* ? ?)`6`#`#`6`#`#`(- ? ?)`x`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (* 6 6) (- x x)) 6))
+ nr_nodes: 10]
+(CANDIDATE)[id: 213
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 214
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 215
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(- ? ?)`6`#`#`x`#`#`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (- 6 x) 6) 6))
+ nr_nodes: 8]
+(CANDIDATE)[id: 216
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 217
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`x`#`#`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (+ x y) 6))
+ nr_nodes: 6]
+(CANDIDATE)[id: 218
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 219
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 220
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 221
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 222
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(+ ? ?)`x`#`#`x`#`#`(+ ? ?)`y`#`#`(+ ? ?)`(* ? ?)`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (+ x x)) (+ y (+ (* 6 x) x))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 223
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(+ ? ?)`(* ? ?)`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ y (+ (* 6 x) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 224
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`y`#`#`(* ? ?)`x`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (* y (* x 6)) y))
+ nr_nodes: 8]
+(CANDIDATE)[id: 225
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`y`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (+ y 6) x))
+ nr_nodes: 6]
+(CANDIDATE)[id: 226
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 227
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 228
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 229
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`6`#`#`(+ ? ?)`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ 6 (+ y x)) x))
+ nr_nodes: 8]
+(CANDIDATE)[id: 230
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 231
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`6`#`#`6`#`#`(- ? ?)`(* ? ?)`y`#`#`(- ? ?)`6`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (* 6 6) (- (* y (- 6 6)) y)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 232
+ encoding: (defun my_func (x y) ?)`(* ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 233
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 234
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 235
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`(* ? ?)`(* ? ?)`6`#`#`6`#`#`(- ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 (* (* 6 6) (- 6 x))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 236
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`x`#`#`x`#`#`(- ? ?)`(+ ? ?)`y`#`#`x`#`#`(+ ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (* x x) (- (+ y x) (+ y 6))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 237
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* x x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 238
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 239
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- y x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 240
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 241
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 242
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(- ? ?)`(- ? ?)`(* ? ?)`6`#`#`6`#`#`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (- (- (* 6 6) 6) x) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 243
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`(* ? ?)`(+ ? ?)`6`#`#`(* ? ?)`x`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 (* (+ 6 (* x x)) 6)))
+ nr_nodes: 10]
+(CANDIDATE)[id: 244
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`x`#`#`(* ? ?)`6`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (+ x (* 6 6)) x))
+ nr_nodes: 8]
+(CANDIDATE)[id: 245
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(- ? ?)`x`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (- x 6)) y))
+ nr_nodes: 8]
+(CANDIDATE)[id: 246
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(- ? ?)`(- ? ?)`6`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* x (- (- 6 6) y)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 247
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 248
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 249
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`x`#`#`y`#`#`(* ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (- x y) (* x x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 250
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 251
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 252
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 253
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 254
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 255
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 256
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`(+ ? ?)`6`#`#`6`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x (+ 6 6)) 6))
+ nr_nodes: 8]
+(CANDIDATE)[id: 257
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`(- ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* 6 (- y x)))
+ nr_nodes: 6]
+(CANDIDATE)[id: 258
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(+ ? ?)`(- ? ?)`6`#`#`y`#`#`y`#`#`(+ ? ?)`(- ? ?)`x`#`#`6`#`#`(+ ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (+ (- 6 y) y) (+ (- x 6) (+ x x))))
+ nr_nodes: 14]
+(CANDIDATE)[id: 259
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 260
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 261
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 262
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 263
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 264
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`(- ? ?)`x`#`#`x`#`#`(+ ? ?)`y`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (+ (- x x) (+ y x)) y))
+ nr_nodes: 10]
+(CANDIDATE)[id: 265
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(- ? ?)`x`#`#`(* ? ?)`y`#`#`(- ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y (- x (* y (- y 6)))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 266
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`(+ ? ?)`(+ ? ?)`y`#`#`(+ ? ?)`y`#`#`6`#`#`(* ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 (+ (+ y (+ y 6)) (* y x))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 267
+ encoding: (defun my_func (x y) ?)`(* ? ?)`6`#`#`(- ? ?)`(+ ? ?)`6`#`#`(+ ? ?)`6`#`#`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* 6 (- (+ 6 (+ 6 6)) y)))
+ nr_nodes: 10]
+(CANDIDATE)[id: 268
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 269
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 270
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 271
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 272
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 273
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`(* ? ?)`(* ? ?)`y`#`#`x`#`#`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (* (* (* y x) 6) x) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 274
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 275
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(+ ? ?)`(- ? ?)`x`#`#`x`#`#`(* ? ?)`y`#`#`6`#`#`6`#`#`(+ ? ?)`(+ ? ?)`x`#`#`x`#`#`(- ? ?)`6`#`#`(* ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (+ (- x x) (* y 6)) 6) (+ (+ x x) (- 6 (* 6 x)))))
+ nr_nodes: 20]
+(CANDIDATE)[id: 276
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(- ? ?)`x`#`#`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`(* ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (* (- x x) (* (* 6 y) (* 6 y))))
+ nr_nodes: 12]
+(CANDIDATE)[id: 277
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(* ? ?)`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (* 6 x) x))
+ nr_nodes: 6]
+(CANDIDATE)[id: 278
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 279
+ encoding: (defun my_func (x y) ?)`(- ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- 6 y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 280
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`(* ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- y (* y y)))
+ nr_nodes: 6]
+(CANDIDATE)[id: 281
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`(* ? ?)`(- ? ?)`6`#`#`y`#`#`(+ ? ?)`6`#`#`6`#`#`(+ ? ?)`(+ ? ?)`y`#`#`x`#`#`(+ ? ?)`6`#`#`x`#`#`(+ ? ?)`(* ? ?)`y`#`#`(- ? ?)`y`#`#`x`#`#`(* ? ?)`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ (* (- 6 y) (+ 6 6)) (+ (+ y x) (+ 6 x))) (+ (* y (- y x)) (* x x))))
+ nr_nodes: 26]
+(CANDIDATE)[id: 282
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 283
+ encoding: (defun my_func (x y) ?)`y`#`#`#
+ s_expr: (defun my_func (x y) y)
+ nr_nodes: 2]
+(CANDIDATE)[id: 284
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(* ? ?)`(- ? ?)`(+ ? ?)`y`#`#`6`#`#`y`#`#`(+ ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (* (- (+ y 6) y) (+ (* 6 y) x)) y))
+ nr_nodes: 14]
+(CANDIDATE)[id: 285
+ encoding: (defun my_func (x y) ?)`(- ? ?)`6`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- 6 y))
+ nr_nodes: 4]
+(CANDIDATE)[id: 286
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`6`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ 6 y) x))
+ nr_nodes: 6]
+(CANDIDATE)[id: 287
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`(* ? ?)`y`#`#`y`#`#`x`#`#`(* ? ?)`(- ? ?)`6`#`#`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (- (- (* y y) x) (* (- 6 x) 6)))
+ nr_nodes: 12]
+(CANDIDATE)[id: 288
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 289
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 290
+ encoding: (defun my_func (x y) ?)`(* ? ?)`(- ? ?)`(* ? ?)`6`#`#`x`#`#`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* (- (* 6 x) y) x))
+ nr_nodes: 8]
+(CANDIDATE)[id: 291
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ 6 x))
+ nr_nodes: 4]
+(CANDIDATE)[id: 292
+ encoding: (defun my_func (x y) ?)`(- ? ?)`y`#`#`(+ ? ?)`(* ? ?)`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- y (+ (* y x) x)))
+ nr_nodes: 8]
+(CANDIDATE)[id: 293
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 294
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`6`#`#`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- 6 6) x))
+ nr_nodes: 6]
+(CANDIDATE)[id: 295
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (* x 6))
+ nr_nodes: 4]
+(CANDIDATE)[id: 296
+ encoding: (defun my_func (x y) ?)`6`#`#`#
+ s_expr: (defun my_func (x y) 6)
+ nr_nodes: 2]
+(CANDIDATE)[id: 297
+ encoding: (defun my_func (x y) ?)`x`#`#`#
+ s_expr: (defun my_func (x y) x)
+ nr_nodes: 2]
+(CANDIDATE)[id: 298
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(* ? ?)`y`#`#`(* ? ?)`6`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* x (* y (* 6 x))))
+ nr_nodes: 8]
+(CANDIDATE)[id: 300
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`x`#`#`y`#`#`4`#`#`#
+ s_expr: (defun my_func (x y) (- (+ x y) 4))
+ nr_nodes: 6]
+[Generation 0]
+[Computing fitness]
+[(1.25, 104), (1.25, 264), (1.25, 265), (1.25, 289), (1.125, 5), (1.125, 12), (1.125, 33), (1.125, 141), (1.125, 190), (1.125, 198), (1.125, 242), (1.125, 273), (1.0, 30), (1.0, 31), (1.0, 34), (1.0, 67), (1.0, 78), (1.0, 101), (1.0, 186), (1.0, 212), (1.0, 235), (1.0, 243), (1.0, 267), (0.875, 87), (0.875, 187), (0.875, 200), (0.75, 44), (0.75, 76), (0.75, 91), (0.75, 184), (0.75, 223), (0.75, 292), (0.625, 13), (0.625, 18), (0.625, 24), (0.625, 25), (0.625, 26), (0.625, 50), (0.625, 52), (0.625, 99), (0.625, 109), (0.625, 130), (0.625, 138), (0.625, 156), (0.625, 179), (0.625, 185), (0.625, 224), (0.625, 231), (0.625, 244), (0.625, 246), (0.625, 249), (0.625, 276), (0.625, 290), (0.625, 298), (0.5416666666666666, 22), (0.5416666666666666, 113), (0.5, 4), (0.5, 19), (0.5, 39), (0.5, 41), (0.5, 43), (0.5, 51), (0.5, 54), (0.5, 75), (0.5, 79), (0.5, 117), (0.5, 125), (0.5, 128), (0.5, 136), (0.5, 144), (0.5, 149), (0.5, 204), (0.5, 215), (0.5, 229), (0.5, 236), (0.5, 245), (0.5, 256), (0.5, 266), (0.5, 287), (0.5, 294), (0.41666666666666663, 37), (0.41666666666666663, 60), (0.41666666666666663, 165), (0.41666666666666663, 192), (0.41666666666666663, 237), (0.41666666666666663, 239), (0.375, 1), (0.375, 7), (0.375, 8), (0.375, 11), (0.375, 16), (0.375, 17), (0.375, 23), (0.375, 28), (0.375, 29), (0.375, 32), (0.375, 36), (0.375, 40), (0.375, 45), (0.375, 49), (0.375, 53), (0.375, 55), (0.375, 56), (0.375, 57), (0.375, 63), (0.375, 64), (0.375, 68), (0.375, 71), (0.375, 72), (0.375, 74), (0.375, 80), (0.375, 81), (0.375, 84), (0.375, 85), (0.375, 88), (0.375, 90), (0.375, 94), (0.375, 97), (0.375, 98), (0.375, 100), (0.375, 102), (0.375, 105), (0.375, 108), (0.375, 110), (0.375, 114), (0.375, 115), (0.375, 116), (0.375, 118), (0.375, 119), (0.375, 121), (0.375, 123), (0.375, 126), (0.375, 129), (0.375, 131), (0.375, 133), (0.375, 134), (0.375, 135), (0.375, 137), (0.375, 139), (0.375, 140), (0.375, 147), (0.375, 148), (0.375, 150), (0.375, 155), (0.375, 158), (0.375, 160), (0.375, 163), (0.375, 166), (0.375, 167), (0.375, 170), (0.375, 171), (0.375, 173), (0.375, 174), (0.375, 178), (0.375, 180), (0.375, 182), (0.375, 183), (0.375, 193), (0.375, 194), (0.375, 195), (0.375, 197), (0.375, 201), (0.375, 202), (0.375, 203), (0.375, 206), (0.375, 207), (0.375, 209), (0.375, 210), (0.375, 211), (0.375, 213), (0.375, 214), (0.375, 216), (0.375, 217), (0.375, 219), (0.375, 220), (0.375, 221), (0.375, 222), (0.375, 225), (0.375, 227), (0.375, 228), (0.375, 230), (0.375, 233), (0.375, 234), (0.375, 240), (0.375, 247), (0.375, 248), (0.375, 250), (0.375, 252), (0.375, 253), (0.375, 255), (0.375, 257), (0.375, 259), (0.375, 261), (0.375, 262), (0.375, 268), (0.375, 271), (0.375, 277), (0.375, 280), (0.375, 282), (0.375, 283), (0.375, 284), (0.375, 288), (0.375, 293), (0.375, 297), (0.29166666666666663, 9), (0.29166666666666663, 48), (0.29166666666666663, 58), (0.29166666666666663, 59), (0.29166666666666663, 62), (0.29166666666666663, 93), (0.29166666666666663, 106), (0.29166666666666663, 107), (0.29166666666666663, 120), (0.29166666666666663, 127), (0.29166666666666663, 143), (0.29166666666666663, 145), (0.29166666666666663, 159), (0.29166666666666663, 176), (0.29166666666666663, 196), (0.29166666666666663, 232), (0.29166666666666663, 295), (0.25, 21), (0.25, 27), (0.25, 46), (0.25, 66), (0.25, 92), (0.25, 95), (0.25, 96), (0.25, 157), (0.25, 164), (0.25, 258), (0.25, 286), (0.25, 300), (0.20833333333333331, 10), (0.16666666666666666, 6), (0.16666666666666666, 15), (0.16666666666666666, 20), (0.16666666666666666, 42), (0.16666666666666666, 47), (0.16666666666666666, 83), (0.16666666666666666, 146), (0.16666666666666666, 151), (0.16666666666666666, 162), (0.16666666666666666, 177), (0.16666666666666666, 263), (0.16666666666666666, 278), (0.16666666666666666, 279), (0.16666666666666666, 285), (0.16666666666666666, 291), (0.125, 0), (0.125, 2), (0.125, 3), (0.125, 14), (0.125, 35), (0.125, 38), (0.125, 61), (0.125, 65), (0.125, 69), (0.125, 70), (0.125, 73), (0.125, 77), (0.125, 82), (0.125, 89), (0.125, 103), (0.125, 111), (0.125, 112), (0.125, 122), (0.125, 124), (0.125, 132), (0.125, 142), (0.125, 152), (0.125, 153), (0.125, 154), (0.125, 161), (0.125, 168), (0.125, 169), (0.125, 172), (0.125, 181), (0.125, 188), (0.125, 189), (0.125, 191), (0.125, 205), (0.125, 208), (0.125, 218), (0.125, 226), (0.125, 238), (0.125, 241), (0.125, 251), (0.125, 254), (0.125, 260), (0.125, 269), (0.125, 270), (0.125, 272), (0.125, 274), (0.125, 296), (0.1, 175), (0.1, 275), (0.08333333333333333, 86), (0.07142857142857142, 199), (0.0625, 281)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 104
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(* ? ?)`x`#`#`(* ? ?)`y`#`#`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (* x (* y 6)) x) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 264
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`(- ? ?)`x`#`#`x`#`#`(+ ? ?)`y`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (+ (- x x) (+ y x)) y))
+ nr_nodes: 10]
+(CANDIDATE)[id: 265
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(- ? ?)`x`#`#`(* ? ?)`y`#`#`(- ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y (- x (* y (- y 6)))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 289
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 5
+ encoding: (defun my_func (x y) ?)`(* ? ?)`x`#`#`(- ? ?)`(+ ? ?)`y`#`#`6`#`#`(- ? ?)`y`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (* x (- (+ y 6) (- y x))))
+ nr_nodes: 10]
+[Generation 1]
+[Computing fitness]
+[(1.375, 303), (1.25, 289), (1.25, 104), (1.25, 264), (1.25, 265), (1.125, 33), (1.125, 242), (1.125, 12), (1.125, 5), (1.125, 335), (1.125, 190), (1.125, 141), (1.125, 329), (1.125, 198), (1.125, 325), (1.125, 342), (1.125, 273), (1.125, 315), (1.0, 347), (1.0, 30), (1.0, 235), (1.0, 313), (1.0, 212), (1.0, 67), (1.0, 101), (1.0, 243), (1.0, 34), (1.0, 31), (1.0, 267), (1.0, 310), (1.0, 78), (1.0, 311), (1.0, 186), (0.875, 317), (0.875, 200), (0.875, 87), (0.875, 187), (0.75, 326), (0.75, 184), (0.75, 76), (0.75, 319), (0.75, 44), (0.75, 223), (0.75, 292), (0.75, 348), (0.75, 320), (0.75, 91), (0.625, 24), (0.625, 18), (0.625, 249), (0.625, 244), (0.625, 52), (0.625, 332), (0.625, 301), (0.625, 26), (0.625, 312), (0.625, 179), (0.625, 246), (0.625, 130), (0.625, 13), (0.625, 50), (0.625, 224), (0.625, 298), (0.625, 305), (0.625, 99), (0.625, 327), (0.625, 304), (0.625, 331), (0.625, 276), (0.625, 138), (0.625, 309), (0.625, 185), (0.625, 25), (0.625, 231), (0.625, 156), (0.625, 336), (0.625, 109), (0.625, 290), (0.625, 307), (0.5416666666666666, 337), (0.5416666666666666, 113), (0.5416666666666666, 22), (0.5, 43), (0.5, 236), (0.5, 314), (0.5, 4), (0.5, 256), (0.5, 128), (0.5, 294), (0.5, 266), (0.5, 39), (0.5, 144), (0.5, 149), (0.5, 344), (0.5, 341), (0.5, 117), (0.5, 75), (0.5, 346), (0.5, 287), (0.5, 345), (0.5, 245), (0.5, 51), (0.5, 229), (0.5, 79), (0.5, 125), (0.5, 349), (0.5, 41), (0.5, 136), (0.5, 19), (0.5, 215), (0.5, 350), (0.5, 54), (0.5, 204), (0.41666666666666663, 237), (0.41666666666666663, 37), (0.41666666666666663, 192), (0.41666666666666663, 60), (0.41666666666666663, 353), (0.41666666666666663, 165), (0.41666666666666663, 352), (0.41666666666666663, 334), (0.41666666666666663, 239), (0.375, 131), (0.375, 163), (0.375, 11), (0.375, 253), (0.375, 97), (0.375, 16), (0.375, 365), (0.375, 234), (0.375, 371), (0.375, 271), (0.375, 391), (0.375, 81), (0.375, 193), (0.375, 28), (0.375, 360), (0.375, 173), (0.375, 139), (0.375, 386), (0.375, 71), (0.375, 203), (0.375, 23), (0.375, 355), (0.375, 233), (0.375, 228), (0.375, 160), (0.375, 377), (0.375, 150), (0.375, 261), (0.375, 217), (0.375, 361), (0.375, 210), (0.375, 8), (0.375, 356), (0.375, 250), (0.375, 84), (0.375, 252), (0.375, 166), (0.375, 72), (0.375, 262), (0.375, 63), (0.375, 53), (0.375, 284), (0.375, 114), (0.375, 216), (0.375, 230), (0.375, 167), (0.375, 384), (0.375, 372), (0.375, 194), (0.375, 123), (0.375, 133), (0.375, 375), (0.375, 45), (0.375, 293), (0.375, 220), (0.375, 36), (0.375, 222), (0.375, 219), (0.375, 297), (0.375, 247), (0.375, 369), (0.375, 288), (0.375, 240), (0.375, 98), (0.375, 17), (0.375, 182), (0.375, 277), (0.375, 32), (0.375, 108), (0.375, 115), (0.375, 171), (0.375, 183), (0.375, 248), (0.375, 201), (0.375, 178), (0.375, 392), (0.375, 1), (0.375, 55), (0.375, 129), (0.375, 367), (0.375, 214), (0.375, 282), (0.375, 383), (0.375, 56), (0.375, 29), (0.375, 102), (0.375, 387), (0.375, 40), (0.375, 147), (0.375, 118), (0.375, 85), (0.375, 137), (0.375, 268), (0.375, 126), (0.375, 368), (0.375, 209), (0.375, 257), (0.375, 197), (0.375, 158), (0.375, 88), (0.375, 207), (0.375, 119), (0.375, 211), (0.375, 195), (0.375, 90), (0.375, 354), (0.375, 49), (0.375, 100), (0.375, 283), (0.375, 64), (0.375, 74), (0.375, 134), (0.375, 373), (0.375, 357), (0.375, 381), (0.375, 358), (0.375, 116), (0.375, 121), (0.375, 370), (0.375, 225), (0.375, 364), (0.375, 227), (0.375, 155), (0.375, 174), (0.375, 68), (0.375, 202), (0.375, 206), (0.375, 57), (0.375, 385), (0.375, 390), (0.375, 380), (0.375, 135), (0.375, 80), (0.375, 170), (0.375, 382), (0.375, 362), (0.375, 322), (0.375, 105), (0.375, 213), (0.375, 259), (0.375, 94), (0.375, 148), (0.375, 379), (0.375, 180), (0.375, 221), (0.375, 280), (0.375, 140), (0.375, 110), (0.375, 339), (0.375, 389), (0.375, 255), (0.375, 7), (0.375, 323), (0.29166666666666663, 107), (0.29166666666666663, 93), (0.29166666666666663, 106), (0.29166666666666663, 59), (0.29166666666666663, 295), (0.29166666666666663, 232), (0.29166666666666663, 176), (0.29166666666666663, 143), (0.29166666666666663, 145), (0.29166666666666663, 120), (0.29166666666666663, 159), (0.29166666666666663, 328), (0.29166666666666663, 9), (0.29166666666666663, 62), (0.29166666666666663, 58), (0.29166666666666663, 351), (0.29166666666666663, 127), (0.29166666666666663, 196), (0.29166666666666663, 48), (0.25, 46), (0.25, 21), (0.25, 340), (0.25, 66), (0.25, 27), (0.25, 343)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 303
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 289
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 104
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(* ? ?)`x`#`#`(* ? ?)`y`#`#`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (* x (* y 6)) x) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 264
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`(- ? ?)`x`#`#`x`#`#`(+ ? ?)`y`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (+ (- x x) (+ y x)) y))
+ nr_nodes: 10]
+(CANDIDATE)[id: 265
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(- ? ?)`x`#`#`(* ? ?)`y`#`#`(- ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y (- x (* y (- y 6)))))
+ nr_nodes: 10]
+[Generation 2]
+[Computing fitness]
+[(1.375, 303), (1.375, 393), (1.25, 264), (1.25, 289), (1.25, 104), (1.25, 428), (1.25, 265), (1.125, 342), (1.125, 198), (1.125, 396), (1.125, 394), (1.125, 400), (1.125, 190), (1.125, 402), (1.125, 401), (1.125, 242), (1.125, 411), (1.125, 329), (1.125, 33), (1.125, 12), (1.125, 315), (1.125, 335), (1.125, 273), (1.125, 141), (1.125, 451), (1.125, 325), (1.125, 5), (1.0, 406), (1.0, 311), (1.0, 101), (1.0, 31), (1.0, 416), (1.0, 34), (1.0, 462), (1.0, 310), (1.0, 347), (1.0, 212), (1.0, 408), (1.0, 30), (1.0, 186), (1.0, 455), (1.0, 267), (1.0, 415), (1.0, 243), (1.0, 235), (1.0, 313), (1.0, 67), (1.0, 78), (0.875, 87), (0.875, 200), (0.875, 187), (0.875, 317), (0.75, 184), (0.75, 320), (0.75, 348), (0.75, 421), (0.75, 76), (0.75, 449), (0.75, 223), (0.75, 44), (0.75, 423), (0.75, 319), (0.75, 292), (0.75, 422), (0.75, 91), (0.75, 326), (0.625, 307), (0.625, 439), (0.625, 109), (0.625, 305), (0.625, 410), (0.625, 179), (0.625, 312), (0.625, 304), (0.625, 224), (0.625, 185), (0.625, 309), (0.625, 276), (0.625, 436), (0.625, 452), (0.625, 24), (0.625, 52), (0.625, 138), (0.625, 301), (0.625, 290), (0.625, 26), (0.625, 18), (0.625, 336), (0.625, 327), (0.625, 444), (0.625, 440), (0.625, 332), (0.625, 246), (0.625, 130), (0.625, 473), (0.625, 50), (0.625, 474), (0.625, 231), (0.625, 25), (0.625, 438), (0.625, 435), (0.625, 249), (0.625, 13), (0.625, 331), (0.625, 99), (0.625, 244), (0.625, 156), (0.625, 447), (0.625, 298), (0.5416666666666666, 22), (0.5416666666666666, 395), (0.5416666666666666, 113), (0.5416666666666666, 453), (0.5416666666666666, 337), (0.5, 229), (0.5, 41), (0.5, 75), (0.5, 287), (0.5, 476), (0.5, 456), (0.5, 79), (0.5, 54), (0.5, 144), (0.5, 471), (0.5, 19), (0.5, 419), (0.5, 215), (0.5, 204), (0.5, 51), (0.5, 314), (0.5, 466), (0.5, 460), (0.5, 43), (0.5, 468), (0.5, 418), (0.5, 344), (0.5, 346), (0.5, 294), (0.5, 459), (0.5, 39), (0.5, 4), (0.5, 125), (0.5, 430), (0.5, 341), (0.5, 434), (0.5, 349), (0.5, 117), (0.5, 236), (0.5, 149), (0.5, 136), (0.5, 256), (0.5, 128), (0.5, 464), (0.5, 345), (0.5, 245), (0.5, 350), (0.5, 266), (0.41666666666666663, 352), (0.41666666666666663, 37), (0.41666666666666663, 239), (0.41666666666666663, 237), (0.41666666666666663, 334), (0.41666666666666663, 60), (0.41666666666666663, 192), (0.41666666666666663, 165), (0.41666666666666663, 477), (0.41666666666666663, 353), (0.375, 150), (0.375, 277), (0.375, 442), (0.375, 56), (0.375, 167), (0.375, 355), (0.375, 211), (0.375, 217), (0.375, 262), (0.375, 234), (0.375, 163), (0.375, 247), (0.375, 501), (0.375, 17), (0.375, 147), (0.375, 45), (0.375, 182), (0.375, 203), (0.375, 392), (0.375, 386), (0.375, 160), (0.375, 171), (0.375, 253), (0.375, 216), (0.375, 98), (0.375, 487), (0.375, 131), (0.375, 114), (0.375, 391), (0.375, 72), (0.375, 371), (0.375, 485), (0.375, 387), (0.375, 126), (0.375, 361), (0.375, 119), (0.375, 483), (0.375, 297), (0.375, 214), (0.375, 220), (0.375, 207), (0.375, 158), (0.375, 53), (0.375, 293), (0.375, 88), (0.375, 222), (0.375, 432), (0.375, 492), (0.375, 183), (0.375, 129), (0.375, 118), (0.375, 29), (0.375, 16), (0.375, 257), (0.375, 228), (0.375, 271), (0.375, 252), (0.375, 123), (0.375, 499), (0.375, 288), (0.375, 11), (0.375, 375), (0.375, 166), (0.375, 365), (0.375, 268), (0.375, 209), (0.375, 81), (0.375, 240), (0.375, 367), (0.375, 1), (0.375, 398), (0.375, 496), (0.375, 40), (0.375, 261), (0.375, 383), (0.375, 71), (0.375, 282), (0.375, 108), (0.375, 32), (0.375, 97), (0.375, 178), (0.375, 8), (0.375, 173), (0.375, 85), (0.375, 384), (0.375, 28), (0.375, 193), (0.375, 494), (0.375, 201), (0.375, 377), (0.375, 360), (0.375, 133), (0.375, 500), (0.375, 139), (0.375, 248), (0.375, 84), (0.375, 230), (0.375, 368), (0.375, 369), (0.375, 372), (0.375, 491), (0.375, 356), (0.375, 115), (0.375, 482), (0.375, 194), (0.375, 197), (0.375, 137), (0.375, 102), (0.375, 210), (0.375, 55), (0.375, 219), (0.375, 489), (0.375, 63), (0.375, 250), (0.375, 284), (0.375, 497), (0.375, 23), (0.375, 233), (0.375, 502), (0.375, 36), (0.29166666666666663, 420), (0.29166666666666663, 478), (0.29166666666666663, 481), (0.29166666666666663, 426), (0.29166666666666663, 413), (0.29166666666666663, 480), (0.25, 463), (0.25, 470), (0.25, 445), (0.25, 425), (0.25, 457), (0.16666666666666666, 404), (0.16666666666666666, 458)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 303
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 393
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 264
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`(- ? ?)`x`#`#`x`#`#`(+ ? ?)`y`#`#`x`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (+ (- x x) (+ y x)) y))
+ nr_nodes: 10]
+(CANDIDATE)[id: 289
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 104
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(* ? ?)`(* ? ?)`x`#`#`(* ? ?)`y`#`#`6`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (* (* x (* y 6)) x) x))
+ nr_nodes: 10]
+[Generation 3]
+[Computing fitness]
+[(1.375, 503), (1.375, 303), (1.375, 393), (1.25, 428), (1.25, 265), (1.25, 264), (1.25, 289), (1.25, 104), (1.125, 562), (1.125, 402), (1.125, 5), (1.125, 401), (1.125, 396), (1.125, 315), (1.125, 550), (1.125, 242), (1.125, 12), (1.125, 400), (1.125, 198), (1.125, 411), (1.125, 335), (1.125, 507), (1.125, 591), (1.125, 33), (1.125, 342), (1.125, 273), (1.125, 584), (1.125, 190), (1.125, 394), (1.125, 141), (1.125, 451), (1.125, 553), (1.125, 325), (1.125, 329), (1.125, 521), (1.125, 519), (1.125, 520), (1.0, 406), (1.0, 186), (1.0, 455), (1.0, 313), (1.0, 531), (1.0, 31), (1.0, 347), (1.0, 579), (1.0, 311), (1.0, 30), (1.0, 529), (1.0, 235), (1.0, 310), (1.0, 416), (1.0, 408), (1.0, 67), (1.0, 595), (1.0, 267), (1.0, 34), (1.0, 212), (1.0, 524), (1.0, 415), (1.0, 101), (1.0, 243), (1.0, 78), (1.0, 462), (0.875, 537), (0.875, 534), (0.875, 87), (0.875, 504), (0.875, 317), (0.875, 187), (0.875, 200), (0.75, 184), (0.75, 76), (0.75, 91), (0.75, 292), (0.75, 449), (0.75, 348), (0.75, 422), (0.75, 590), (0.75, 44), (0.75, 421), (0.75, 320), (0.75, 319), (0.75, 423), (0.75, 223), (0.75, 568), (0.75, 541), (0.75, 326), (0.625, 571), (0.625, 435), (0.625, 410), (0.625, 510), (0.625, 528), (0.625, 304), (0.625, 560), (0.625, 13), (0.625, 565), (0.625, 564), (0.625, 312), (0.625, 244), (0.625, 440), (0.625, 301), (0.625, 447), (0.625, 305), (0.625, 539), (0.625, 563), (0.625, 26), (0.625, 185), (0.625, 566), (0.625, 309), (0.625, 444), (0.625, 138), (0.625, 545), (0.625, 452), (0.625, 156), (0.625, 332), (0.625, 246), (0.625, 439), (0.625, 52), (0.625, 290), (0.625, 517), (0.625, 298), (0.625, 474), (0.625, 511), (0.625, 336), (0.625, 558), (0.625, 438), (0.625, 327), (0.625, 276), (0.625, 224), (0.625, 179), (0.625, 99), (0.625, 50), (0.625, 307), (0.625, 567), (0.625, 24), (0.625, 231), (0.625, 540), (0.625, 130), (0.625, 249), (0.625, 544), (0.625, 570), (0.625, 109), (0.625, 331), (0.625, 25), (0.625, 473), (0.625, 436), (0.625, 536), (0.625, 18), (0.5416666666666666, 337), (0.5416666666666666, 453), (0.5416666666666666, 113), (0.5416666666666666, 395), (0.5416666666666666, 576), (0.5416666666666666, 22), (0.5, 460), (0.5, 466), (0.5, 588), (0.5, 514), (0.5, 543), (0.5, 350), (0.5, 125), (0.5, 75), (0.5, 599), (0.5, 464), (0.5, 236), (0.5, 39), (0.5, 117), (0.5, 346), (0.5, 51), (0.5, 522), (0.5, 136), (0.5, 345), (0.5, 508), (0.5, 418), (0.5, 419), (0.5, 19), (0.5, 476), (0.5, 459), (0.5, 294), (0.5, 287), (0.5, 215), (0.5, 434), (0.5, 505), (0.5, 593), (0.5, 54), (0.5, 597), (0.5, 204), (0.5, 456), (0.5, 256), (0.5, 602), (0.5, 471), (0.5, 144), (0.5, 245), (0.5, 41), (0.5, 349), (0.5, 128), (0.5, 229), (0.5, 43), (0.5, 589), (0.5, 587), (0.5, 149), (0.5, 527), (0.5, 430), (0.5, 314), (0.5, 344), (0.5, 4), (0.5, 79), (0.5, 266), (0.5, 468), (0.5, 532), (0.5, 341), (0.5, 525), (0.41666666666666663, 192), (0.41666666666666663, 353), (0.41666666666666663, 352), (0.41666666666666663, 237), (0.41666666666666663, 334), (0.41666666666666663, 37), (0.41666666666666663, 477), (0.41666666666666663, 581), (0.41666666666666663, 239), (0.41666666666666663, 60), (0.41666666666666663, 165), (0.375, 501), (0.375, 53), (0.375, 234), (0.375, 16), (0.375, 217), (0.375, 252), (0.375, 163), (0.375, 442), (0.375, 600), (0.375, 277), (0.375, 171), (0.375, 150), (0.375, 432), (0.375, 253), (0.375, 371), (0.375, 119), (0.375, 167), (0.375, 183), (0.375, 216), (0.375, 487), (0.375, 147), (0.375, 293), (0.375, 72), (0.375, 386), (0.375, 126), (0.375, 123), (0.375, 98), (0.375, 551), (0.375, 361), (0.375, 88), (0.375, 131), (0.375, 523), (0.375, 391), (0.375, 262), (0.375, 222), (0.375, 56), (0.375, 247), (0.375, 203), (0.375, 220), (0.375, 556), (0.375, 17), (0.375, 160), (0.375, 129), (0.375, 492), (0.375, 573), (0.375, 485), (0.375, 392), (0.375, 29), (0.375, 387), (0.375, 297), (0.375, 207), (0.375, 211), (0.375, 182), (0.375, 45), (0.375, 158), (0.375, 355), (0.375, 257), (0.375, 114), (0.375, 483), (0.375, 214), (0.375, 118), (0.375, 271), (0.375, 228), (0.29166666666666663, 577), (0.29166666666666663, 535), (0.29166666666666663, 547), (0.29166666666666663, 516), (0.29166666666666663, 574), (0.25, 580), (0.25, 586), (0.25, 582), (0.16666666666666666, 548), (0.16666666666666666, 601), (0.16666666666666666, 526), (0.16666666666666666, 513), (0.16666666666666666, 530), (0.125, 554)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 503
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 303
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 393
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 428
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(- ? ?)`x`#`#`x`#`#`(- ? ?)`x`#`#`(* ? ?)`y`#`#`y`#`#`#
+ s_expr: (defun my_func (x y) (- (- x x) (- x (* y y))))
+ nr_nodes: 10]
+(CANDIDATE)[id: 265
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`y`#`#`(- ? ?)`x`#`#`(* ? ?)`y`#`#`(- ? ?)`y`#`#`6`#`#`#
+ s_expr: (defun my_func (x y) (+ y (- x (* y (- y 6)))))
+ nr_nodes: 10]
+[Generation 4]
+[Computing fitness]
+[(1.375, 393), (1.375, 604), (1.375, 303), (1.375, 503), (1.25, 289), (1.25, 264), (1.25, 607), (1.25, 608), (1.25, 636), (1.25, 428), (1.25, 104), (1.25, 617), (1.25, 265), (1.125, 451), (1.125, 584), (1.125, 677), (1.125, 618), (1.125, 611), (1.125, 521), (1.125, 519), (1.125, 242), (1.125, 394), (1.125, 141), (1.125, 329), (1.125, 190), (1.125, 198), (1.125, 562), (1.125, 591), (1.125, 396), (1.125, 12), (1.125, 342), (1.125, 507), (1.125, 5), (1.125, 400), (1.125, 402), (1.125, 335), (1.125, 315), (1.125, 401), (1.125, 33), (1.125, 688), (1.125, 411), (1.125, 626), (1.125, 520), (1.125, 325), (1.125, 553), (1.125, 550), (1.125, 273), (1.125, 629), (1.0, 311), (1.0, 267), (1.0, 415), (1.0, 416), (1.0, 637), (1.0, 186), (1.0, 455), (1.0, 529), (1.0, 524), (1.0, 67), (1.0, 635), (1.0, 212), (1.0, 595), (1.0, 310), (1.0, 78), (1.0, 31), (1.0, 101), (1.0, 347), (1.0, 531), (1.0, 313), (1.0, 30), (1.0, 408), (1.0, 235), (1.0, 620), (1.0, 680), (1.0, 579), (1.0, 34), (1.0, 243), (1.0, 462), (1.0, 406), (0.875, 534), (0.875, 647), (0.875, 651), (0.875, 200), (0.875, 317), (0.875, 504), (0.875, 187), (0.875, 537), (0.875, 87), (0.75, 568), (0.75, 319), (0.75, 44), (0.75, 320), (0.75, 697), (0.75, 91), (0.75, 630), (0.75, 326), (0.75, 656), (0.75, 660), (0.75, 421), (0.75, 76), (0.75, 292), (0.75, 659), (0.75, 702), (0.75, 348), (0.75, 541), (0.75, 695), (0.75, 679), (0.75, 675), (0.75, 422), (0.75, 184), (0.75, 654), (0.75, 223), (0.75, 657), (0.75, 449), (0.75, 423), (0.75, 590), (0.625, 156), (0.625, 528), (0.625, 655), (0.625, 440), (0.625, 179), (0.625, 327), (0.625, 439), (0.625, 473), (0.625, 662), (0.625, 138), (0.625, 567), (0.625, 305), (0.625, 25), (0.625, 517), (0.625, 13), (0.625, 130), (0.625, 447), (0.625, 623), (0.625, 298), (0.625, 610), (0.625, 332), (0.625, 606), (0.625, 511), (0.625, 224), (0.625, 52), (0.625, 331), (0.625, 307), (0.625, 563), (0.625, 50), (0.625, 566), (0.625, 510), (0.625, 312), (0.625, 185), (0.625, 309), (0.625, 699), (0.625, 558), (0.625, 539), (0.625, 564), (0.625, 474), (0.625, 545), (0.625, 664), (0.625, 544), (0.625, 438), (0.625, 336), (0.625, 624), (0.625, 435), (0.625, 670), (0.625, 540), (0.625, 665), (0.625, 640), (0.625, 99), (0.625, 276), (0.625, 231), (0.625, 26), (0.625, 693), (0.625, 570), (0.625, 560), (0.625, 658), (0.625, 436), (0.625, 18), (0.625, 244), (0.625, 681), (0.625, 571), (0.625, 536), (0.625, 304), (0.625, 444), (0.625, 666), (0.625, 410), (0.625, 109), (0.625, 669), (0.625, 301), (0.625, 24), (0.625, 246), (0.625, 249), (0.625, 290), (0.625, 565), (0.625, 452), (0.5416666666666666, 453), (0.5416666666666666, 337), (0.5416666666666666, 704), (0.5416666666666666, 22), (0.5416666666666666, 576), (0.5416666666666666, 113), (0.5416666666666666, 395), (0.5, 459), (0.5, 543), (0.5, 589), (0.5, 144), (0.5, 471), (0.5, 460), (0.5, 456), (0.5, 128), (0.5, 505), (0.5, 673), (0.5, 350), (0.5, 468), (0.5, 19), (0.5, 588), (0.5, 514), (0.5, 476), (0.5, 4), (0.5, 419), (0.5, 117), (0.5, 287), (0.5, 593), (0.5, 236), (0.5, 125), (0.5, 434), (0.5, 314), (0.5, 204), (0.5, 652), (0.5, 149), (0.5, 344), (0.5, 599), (0.5, 294), (0.5, 79), (0.5, 256), (0.5, 466), (0.5, 75), (0.5, 39), (0.5, 349), (0.5, 525), (0.5, 136), (0.5, 532), (0.5, 692), (0.5, 508), (0.5, 229), (0.5, 215), (0.5, 634), (0.5, 684), (0.5, 650), (0.5, 587), (0.5, 644), (0.5, 464), (0.5, 597), (0.5, 430), (0.5, 643), (0.5, 700), (0.5, 266), (0.5, 345), (0.5, 648), (0.5, 346), (0.5, 602), (0.5, 527), (0.5, 43), (0.5, 54), (0.5, 245), (0.5, 628), (0.5, 522), (0.5, 341), (0.5, 418), (0.5, 41), (0.5, 51), (0.41666666666666663, 698), (0.41666666666666663, 334), (0.41666666666666663, 37), (0.41666666666666663, 60), (0.41666666666666663, 678), (0.41666666666666663, 239), (0.41666666666666663, 165), (0.41666666666666663, 581), (0.41666666666666663, 477), (0.41666666666666663, 353), (0.41666666666666663, 237), (0.41666666666666663, 192), (0.41666666666666663, 352), (0.375, 690), (0.375, 501), (0.375, 686), (0.375, 614), (0.375, 668), (0.375, 53), (0.375, 641), (0.375, 671), (0.375, 615), (0.375, 685), (0.375, 621), (0.375, 676), (0.29166666666666663, 632), (0.29166666666666663, 613), (0.16666666666666666, 638), (0.16666666666666666, 639), (0.16666666666666666, 645), (0.16666666666666666, 682), (0.125, 694)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 393
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 604
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 303
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 503
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 289
+ encoding: (defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (- (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+[Generation 5]
+[Computing fitness]
+[(1.375, 393), (1.375, 503), (1.375, 604), (1.375, 303), (1.375, 758), (1.375, 706), (1.375, 705), (1.25, 709), (1.25, 617), (1.25, 793), (1.25, 265), (1.25, 636), (1.25, 289), (1.25, 104), (1.25, 607), (1.25, 264), (1.25, 428), (1.25, 608), (1.125, 713), (1.125, 315), (1.125, 725), (1.125, 629), (1.125, 553), (1.125, 520), (1.125, 198), (1.125, 731), (1.125, 400), (1.125, 401), (1.125, 141), (1.125, 521), (1.125, 677), (1.125, 242), (1.125, 733), (1.125, 519), (1.125, 342), (1.125, 335), (1.125, 688), (1.125, 720), (1.125, 550), (1.125, 12), (1.125, 760), (1.125, 329), (1.125, 325), (1.125, 562), (1.125, 394), (1.125, 715), (1.125, 611), (1.125, 626), (1.125, 402), (1.125, 33), (1.125, 774), (1.125, 273), (1.125, 722), (1.125, 798), (1.125, 190), (1.125, 591), (1.125, 618), (1.125, 396), (1.125, 724), (1.125, 584), (1.125, 507), (1.125, 411), (1.125, 5), (1.125, 451), (1.0, 524), (1.0, 31), (1.0, 30), (1.0, 743), (1.0, 101), (1.0, 726), (1.0, 620), (1.0, 736), (1.0, 741), (1.0, 243), (1.0, 416), (1.0, 680), (1.0, 310), (1.0, 751), (1.0, 748), (1.0, 415), (1.0, 67), (1.0, 235), (1.0, 579), (1.0, 78), (1.0, 406), (1.0, 462), (1.0, 212), (1.0, 637), (1.0, 186), (1.0, 313), (1.0, 311), (1.0, 267), (1.0, 347), (1.0, 531), (1.0, 408), (1.0, 455), (1.0, 34), (1.0, 635), (1.0, 750), (1.0, 595), (1.0, 529), (0.875, 87), (0.875, 754), (0.875, 534), (0.875, 647), (0.875, 504), (0.875, 651), (0.875, 317), (0.875, 755), (0.875, 187), (0.875, 757), (0.875, 537), (0.875, 200), (0.75, 765), (0.75, 44), (0.75, 767), (0.75, 675), (0.75, 292), (0.75, 91), (0.75, 768), (0.75, 421), (0.75, 697), (0.75, 654), (0.75, 568), (0.75, 708), (0.75, 326), (0.75, 656), (0.75, 630), (0.75, 761), (0.75, 660), (0.75, 772), (0.75, 184), (0.75, 320), (0.75, 422), (0.75, 423), (0.75, 541), (0.75, 775), (0.75, 319), (0.75, 679), (0.75, 659), (0.75, 695), (0.75, 657), (0.75, 76), (0.75, 590), (0.75, 223), (0.75, 449), (0.75, 702), (0.75, 348), (0.625, 474), (0.625, 570), (0.625, 779), (0.625, 517), (0.625, 665), (0.625, 439), (0.625, 567), (0.625, 773), (0.625, 307), (0.625, 336), (0.625, 298), (0.625, 440), (0.625, 670), (0.625, 540), (0.625, 728), (0.625, 50), (0.625, 606), (0.625, 528), (0.625, 249), (0.625, 662), (0.625, 410), (0.625, 623), (0.625, 718), (0.625, 304), (0.625, 693), (0.625, 179), (0.625, 796), (0.625, 723), (0.625, 800), (0.625, 539), (0.625, 669), (0.625, 185), (0.625, 571), (0.625, 655), (0.625, 25), (0.625, 332), (0.625, 781), (0.625, 436), (0.625, 782), (0.625, 624), (0.625, 563), (0.625, 435), (0.625, 473), (0.625, 565), (0.625, 545), (0.625, 447), (0.625, 511), (0.625, 544), (0.625, 801), (0.625, 156), (0.625, 681), (0.625, 26), (0.625, 52), (0.625, 699), (0.625, 13), (0.625, 560), (0.625, 24), (0.625, 566), (0.625, 452), (0.625, 791), (0.625, 99), (0.625, 246), (0.625, 558), (0.625, 771), (0.625, 610), (0.625, 327), (0.625, 666), (0.625, 564), (0.625, 109), (0.625, 305), (0.625, 312), (0.625, 231), (0.625, 290), (0.625, 766), (0.625, 664), (0.625, 331), (0.625, 510), (0.625, 438), (0.625, 794), (0.625, 138), (0.625, 18), (0.625, 309), (0.625, 658), (0.625, 730), (0.625, 244), (0.625, 224), (0.625, 276), (0.625, 444), (0.625, 536), (0.625, 301), (0.625, 797), (0.625, 130), (0.625, 640), (0.5416666666666666, 789), (0.5416666666666666, 576), (0.5416666666666666, 22), (0.5416666666666666, 337), (0.5416666666666666, 113), (0.5416666666666666, 453), (0.5416666666666666, 704), (0.5416666666666666, 395), (0.5, 505), (0.5, 721), (0.5, 117), (0.5, 460), (0.5, 204), (0.5, 314), (0.5, 777), (0.5, 125), (0.5, 714), (0.5, 287), (0.5, 236), (0.5, 476), (0.5, 456), (0.5, 543), (0.5, 589), (0.5, 514), (0.5, 350), (0.5, 739), (0.5, 749), (0.5, 673), (0.5, 471), (0.5, 144), (0.5, 593), (0.5, 434), (0.5, 19), (0.5, 747), (0.5, 763), (0.5, 756), (0.5, 419), (0.5, 459), (0.5, 128), (0.5, 588), (0.5, 4), (0.5, 468), (0.41666666666666663, 734), (0.375, 710), (0.375, 712), (0.375, 745), (0.375, 769), (0.375, 787), (0.375, 785), (0.29166666666666663, 784), (0.29166666666666663, 759), (0.29166666666666663, 740), (0.29166666666666663, 753), (0.29166666666666663, 716), (0.25, 738), (0.25, 744), (0.16666666666666666, 719), (0.16666666666666666, 786), (0.16666666666666666, 737)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 393
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 503
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 604
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 303
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 758
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`y`#`#`(* ? ?)`(- ? ?)`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x y) (* (- x x) x)))
+ nr_nodes: 10]
+[Generation 6]
+[Computing fitness]
+[(1.375, 758), (1.375, 802), (1.375, 393), (1.375, 706), (1.375, 705), (1.375, 803), (1.375, 303), (1.375, 503), (1.375, 604), (1.25, 428), (1.25, 104), (1.25, 264), (1.25, 608), (1.25, 265), (1.25, 893), (1.25, 636), (1.25, 793), (1.25, 709), (1.25, 289), (1.25, 607), (1.25, 617), (1.25, 812), (1.125, 818), (1.125, 725), (1.125, 553), (1.125, 835), (1.125, 329), (1.125, 618), (1.125, 626), (1.125, 400), (1.125, 774), (1.125, 839), (1.125, 733), (1.125, 394), (1.125, 451), (1.125, 611), (1.125, 834), (1.125, 33), (1.125, 190), (1.125, 335), (1.125, 889), (1.125, 713), (1.125, 562), (1.125, 824), (1.125, 629), (1.125, 401), (1.125, 804), (1.125, 798), (1.125, 242), (1.125, 731), (1.125, 826), (1.125, 724), (1.125, 325), (1.125, 550), (1.125, 141), (1.125, 521), (1.125, 396), (1.125, 677), (1.125, 837), (1.125, 507), (1.125, 688), (1.125, 823), (1.125, 342), (1.125, 315), (1.125, 820), (1.125, 881), (1.125, 411), (1.125, 591), (1.125, 720), (1.125, 825), (1.125, 273), (1.125, 722), (1.125, 520), (1.125, 519), (1.125, 715), (1.125, 5), (1.125, 584), (1.125, 12), (1.125, 817), (1.125, 760), (1.125, 402), (1.125, 198), (1.125, 827), (1.0, 31), (1.0, 751), (1.0, 865), (1.0, 78), (1.0, 101), (1.0, 861), (1.0, 455), (1.0, 34), (1.0, 750), (1.0, 847), (1.0, 267), (1.0, 415), (1.0, 637), (1.0, 531), (1.0, 807), (1.0, 741), (1.0, 579), (1.0, 635), (1.0, 311), (1.0, 30), (1.0, 854), (1.0, 235), (1.0, 67), (1.0, 408), (1.0, 748), (1.0, 186), (1.0, 406), (1.0, 462), (1.0, 524), (1.0, 864), (1.0, 243), (1.0, 620), (1.0, 595), (1.0, 313), (1.0, 212), (1.0, 347), (1.0, 848), (1.0, 416), (1.0, 866), (1.0, 736), (1.0, 726), (1.0, 680), (1.0, 743), (1.0, 529), (1.0, 310), (0.875, 873), (0.875, 534), (0.875, 757), (0.875, 647), (0.875, 187), (0.875, 317), (0.875, 537), (0.875, 87), (0.875, 651), (0.875, 200), (0.875, 869), (0.875, 754), (0.875, 894), (0.875, 504), (0.875, 755), (0.75, 541), (0.75, 765), (0.75, 223), (0.75, 880), (0.75, 630), (0.75, 768), (0.75, 702), (0.75, 708), (0.75, 326), (0.75, 775), (0.75, 891), (0.75, 184), (0.75, 660), (0.75, 868), (0.75, 874), (0.75, 657), (0.75, 654), (0.75, 568), (0.75, 76), (0.75, 761), (0.75, 675), (0.75, 656), (0.75, 877), (0.75, 772), (0.75, 697), (0.75, 44), (0.75, 659), (0.75, 695), (0.75, 348), (0.75, 679), (0.75, 292), (0.75, 422), (0.75, 887), (0.75, 885), (0.75, 320), (0.75, 767), (0.75, 423), (0.75, 890), (0.75, 806), (0.75, 91), (0.75, 421), (0.75, 319), (0.75, 590), (0.75, 449), (0.625, 336), (0.625, 570), (0.625, 156), (0.625, 666), (0.625, 304), (0.625, 699), (0.625, 511), (0.625, 819), (0.625, 50), (0.625, 436), (0.625, 307), (0.625, 447), (0.625, 896), (0.625, 312), (0.625, 109), (0.625, 665), (0.625, 565), (0.625, 249), (0.625, 610), (0.625, 558), (0.625, 567), (0.625, 664), (0.625, 899), (0.625, 662), (0.625, 474), (0.625, 560), (0.625, 305), (0.625, 779), (0.625, 821), (0.625, 564), (0.625, 728), (0.625, 332), (0.625, 528), (0.625, 796), (0.625, 766), (0.625, 669), (0.625, 718), (0.625, 681), (0.625, 517), (0.625, 723), (0.625, 544), (0.625, 655), (0.625, 290), (0.625, 52), (0.625, 771), (0.625, 791), (0.625, 624), (0.625, 331), (0.625, 24), (0.625, 810), (0.625, 452), (0.625, 410), (0.625, 440), (0.625, 540), (0.625, 327), (0.625, 782), (0.625, 13), (0.625, 99), (0.625, 623), (0.625, 838), (0.625, 510), (0.625, 841), (0.625, 473), (0.625, 179), (0.625, 829), (0.625, 539), (0.625, 545), (0.625, 822), (0.625, 895), (0.625, 836), (0.625, 435), (0.625, 26), (0.625, 298), (0.625, 566), (0.625, 606), (0.625, 693), (0.625, 231), (0.625, 563), (0.625, 773), (0.625, 871), (0.625, 185), (0.625, 439), (0.625, 801), (0.625, 781), (0.625, 815), (0.625, 571), (0.625, 246), (0.625, 25), (0.625, 800), (0.625, 670), (0.5416666666666666, 892), (0.5416666666666666, 879), (0.5416666666666666, 867), (0.5, 813), (0.5, 846), (0.5, 843), (0.5, 897), (0.5, 845), (0.5, 862), (0.5, 858), (0.375, 833), (0.375, 883), (0.29166666666666663, 876), (0.29166666666666663, 831), (0.25, 814), (0.16666666666666666, 842), (0.16666666666666666, 860), (0.16666666666666666, 849), (0.16666666666666666, 808), (0.16666666666666666, 850), (0.16666666666666666, 855), (0.16666666666666666, 856), (0.16666666666666666, 852)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 758
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`y`#`#`(* ? ?)`(- ? ?)`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x y) (* (- x x) x)))
+ nr_nodes: 10]
+(CANDIDATE)[id: 802
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 393
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 706
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 705
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+[Generation 7]
+[Computing fitness]
+[(1.5, 906), (1.375, 902), (1.375, 803), (1.375, 905), (1.375, 758), (1.375, 303), (1.375, 503), (1.375, 604), (1.375, 706), (1.375, 904), (1.375, 393), (1.375, 705), (1.375, 802), (1.25, 636), (1.25, 289), (1.25, 709), (1.25, 929), (1.25, 907), (1.25, 607), (1.25, 911), (1.25, 608), (1.25, 793), (1.25, 104), (1.25, 265), (1.25, 908), (1.25, 264), (1.25, 893), (1.25, 428), (1.25, 617), (1.25, 812), (1.125, 817), (1.125, 402), (1.125, 562), (1.125, 826), (1.125, 626), (1.125, 774), (1.125, 731), (1.125, 954), (1.125, 190), (1.125, 688), (1.125, 720), (1.125, 335), (1.125, 519), (1.125, 315), (1.125, 947), (1.125, 945), (1.125, 919), (1.125, 141), (1.125, 713), (1.125, 394), (1.125, 824), (1.125, 917), (1.125, 451), (1.125, 677), (1.125, 273), (1.125, 12), (1.125, 400), (1.125, 722), (1.125, 913), (1.125, 584), (1.125, 834), (1.125, 591), (1.125, 411), (1.125, 521), (1.125, 921), (1.125, 618), (1.125, 798), (1.125, 952), (1.125, 823), (1.125, 760), (1.125, 401), (1.125, 396), (1.125, 725), (1.125, 198), (1.125, 507), (1.125, 724), (1.125, 825), (1.125, 818), (1.125, 553), (1.125, 325), (1.125, 550), (1.125, 5), (1.125, 941), (1.125, 889), (1.125, 881), (1.125, 715), (1.125, 837), (1.125, 629), (1.125, 981), (1.125, 611), (1.125, 935), (1.125, 329), (1.125, 342), (1.125, 733), (1.125, 520), (1.125, 942), (1.125, 827), (1.125, 835), (1.125, 804), (1.125, 33), (1.125, 839), (1.125, 820), (1.125, 242), (1.125, 931), (1.0, 212), (1.0, 854), (1.0, 529), (1.0, 930), (1.0, 313), (1.0, 235), (1.0, 524), (1.0, 861), (1.0, 579), (1.0, 980), (1.0, 416), (1.0, 864), (1.0, 311), (1.0, 985), (1.0, 78), (1.0, 975), (1.0, 680), (1.0, 67), (1.0, 847), (1.0, 34), (1.0, 267), (1.0, 406), (1.0, 848), (1.0, 965), (1.0, 347), (1.0, 462), (1.0, 751), (1.0, 186), (1.0, 637), (1.0, 964), (1.0, 595), (1.0, 957), (1.0, 961), (1.0, 978), (1.0, 743), (1.0, 807), (1.0, 726), (1.0, 455), (1.0, 983), (1.0, 966), (1.0, 31), (1.0, 866), (1.0, 741), (1.0, 865), (1.0, 748), (1.0, 949), (1.0, 736), (1.0, 101), (1.0, 750), (1.0, 635), (1.0, 973), (1.0, 310), (1.0, 243), (1.0, 30), (1.0, 408), (1.0, 531), (1.0, 415), (1.0, 986), (1.0, 620), (0.875, 754), (0.875, 950), (0.875, 651), (0.875, 755), (0.875, 317), (0.875, 647), (0.875, 993), (0.875, 994), (0.875, 894), (0.875, 869), (0.875, 990), (0.875, 757), (0.875, 537), (0.875, 504), (0.875, 873), (0.875, 534), (0.875, 87), (0.875, 187), (0.875, 991), (0.875, 200), (0.75, 421), (0.75, 708), (0.75, 292), (0.75, 91), (0.75, 319), (0.75, 326), (0.75, 761), (0.75, 44), (0.75, 997), (0.75, 806), (0.75, 768), (0.75, 541), (0.75, 891), (0.75, 695), (0.75, 885), (0.75, 422), (0.75, 654), (0.75, 702), (0.75, 568), (0.75, 880), (0.75, 775), (0.75, 320), (0.75, 998), (0.75, 992), (0.75, 659), (0.75, 348), (0.75, 76), (0.75, 890), (0.75, 449), (0.75, 772), (0.75, 423), (0.75, 660), (0.75, 936), (0.75, 184), (0.75, 996), (0.75, 887), (0.75, 933), (0.75, 590), (0.75, 679), (0.75, 630), (0.75, 874), (0.75, 767), (0.75, 868), (0.75, 877), (0.75, 995), (0.75, 656), (0.75, 765), (0.75, 909), (0.75, 1000), (0.75, 697), (0.75, 657), (0.75, 223), (0.75, 675), (0.625, 796), (0.625, 699), (0.625, 332), (0.625, 896), (0.625, 779), (0.625, 312), (0.625, 728), (0.625, 156), (0.625, 528), (0.625, 307), (0.625, 511), (0.625, 249), (0.625, 664), (0.625, 50), (0.625, 923), (0.625, 447), (0.625, 109), (0.625, 955), (0.625, 564), (0.625, 304), (0.625, 336), (0.625, 567), (0.625, 766), (0.625, 305), (0.625, 474), (0.625, 819), (0.625, 925), (0.625, 718), (0.625, 821), (0.625, 666), (0.625, 899), (0.625, 948), (0.625, 665), (0.625, 669), (0.625, 570), (0.625, 436), (0.625, 916), (0.625, 928), (0.625, 681), (0.625, 558), (0.625, 560), (0.625, 565), (0.625, 610), (0.625, 662), (0.5416666666666666, 989), (0.5, 972), (0.5, 901), (0.5, 976), (0.5, 915), (0.5, 959), (0.5, 971), (0.5, 963), (0.5, 922), (0.5, 968), (0.5, 932), (0.5, 970), (0.41666666666666663, 938), (0.41666666666666663, 953), (0.375, 940), (0.375, 944), (0.29166666666666663, 927), (0.25, 977), (0.25, 979), (0.16666666666666666, 987)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 906
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 902
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 803
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 905
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 758
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`x`#`#`y`#`#`(* ? ?)`(- ? ?)`x`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ x y) (* (- x x) x)))
+ nr_nodes: 10]
+[Generation 8]
+[Computing fitness]
+[(1.5, 906), (1.375, 902), (1.375, 802), (1.375, 705), (1.375, 1006), (1.375, 905), (1.375, 604), (1.375, 1007), (1.375, 904), (1.375, 503), (1.375, 803), (1.375, 1003), (1.375, 393), (1.375, 303), (1.375, 758), (1.375, 706), (1.375, 1009), (1.25, 289), (1.25, 911), (1.25, 104), (1.25, 1013), (1.25, 265), (1.25, 929), (1.25, 1019), (1.25, 709), (1.25, 1017), (1.25, 1063), (1.25, 636), (1.25, 608), (1.25, 617), (1.25, 1093), (1.25, 1057), (1.25, 907), (1.25, 908), (1.25, 264), (1.25, 607), (1.25, 893), (1.25, 793), (1.25, 428), (1.25, 812), (1.125, 553), (1.125, 981), (1.125, 273), (1.125, 715), (1.125, 33), (1.125, 720), (1.125, 818), (1.125, 688), (1.125, 394), (1.125, 396), (1.125, 954), (1.125, 611), (1.125, 804), (1.125, 520), (1.125, 1058), (1.125, 919), (1.125, 190), (1.125, 725), (1.125, 591), (1.125, 722), (1.125, 618), (1.125, 952), (1.125, 941), (1.125, 1029), (1.125, 141), (1.125, 731), (1.125, 519), (1.125, 521), (1.125, 626), (1.125, 733), (1.125, 677), (1.125, 942), (1.125, 12), (1.125, 826), (1.125, 400), (1.125, 335), (1.125, 913), (1.125, 817), (1.125, 824), (1.125, 947), (1.125, 1038), (1.125, 411), (1.125, 1054), (1.125, 820), (1.125, 798), (1.125, 1026), (1.125, 1033), (1.125, 562), (1.125, 198), (1.125, 1028), (1.125, 935), (1.125, 823), (1.125, 242), (1.125, 5), (1.125, 507), (1.125, 315), (1.125, 629), (1.125, 401), (1.125, 921), (1.125, 1051), (1.125, 760), (1.125, 1065), (1.125, 329), (1.125, 342), (1.125, 837), (1.125, 889), (1.125, 1046), (1.125, 402), (1.125, 1045), (1.125, 325), (1.125, 917), (1.125, 1059), (1.125, 839), (1.125, 1052), (1.125, 1062), (1.125, 550), (1.125, 881), (1.125, 835), (1.125, 1056), (1.125, 1047), (1.125, 451), (1.125, 724), (1.125, 931), (1.125, 1061), (1.125, 584), (1.125, 834), (1.125, 825), (1.125, 945), (1.125, 713), (1.125, 827), (1.125, 774), (1.0, 964), (1.0, 750), (1.0, 861), (1.0, 462), (1.0, 34), (1.0, 1068), (1.0, 973), (1.0, 347), (1.0, 848), (1.0, 983), (1.0, 1053), (1.0, 930), (1.0, 1080), (1.0, 1073), (1.0, 1039), (1.0, 267), (1.0, 975), (1.0, 311), (1.0, 978), (1.0, 854), (1.0, 957), (1.0, 1072), (1.0, 1092), (1.0, 1023), (1.0, 864), (1.0, 635), (1.0, 986), (1.0, 637), (1.0, 1091), (1.0, 751), (1.0, 415), (1.0, 243), (1.0, 531), (1.0, 865), (1.0, 30), (1.0, 313), (1.0, 1078), (1.0, 31), (1.0, 980), (1.0, 186), (1.0, 1043), (1.0, 680), (1.0, 741), (1.0, 743), (1.0, 949), (1.0, 1011), (1.0, 726), (1.0, 529), (1.0, 1067), (1.0, 1079), (1.0, 1086), (1.0, 524), (1.0, 101), (1.0, 961), (1.0, 985), (1.0, 736), (1.0, 235), (1.0, 1075), (1.0, 1074), (1.0, 847), (1.0, 310), (1.0, 807), (1.0, 406), (1.0, 866), (1.0, 408), (1.0, 455), (1.0, 748), (1.0, 595), (1.0, 965), (1.0, 620), (1.0, 1076), (1.0, 67), (1.0, 416), (1.0, 579), (1.0, 966), (1.0, 212), (1.0, 78), (0.875, 200), (0.875, 651), (0.875, 869), (0.875, 534), (0.875, 994), (0.875, 87), (0.875, 894), (0.875, 754), (0.875, 993), (0.875, 757), (0.875, 504), (0.875, 990), (0.875, 950), (0.875, 991), (0.875, 873), (0.875, 647), (0.875, 537), (0.875, 187), (0.875, 755), (0.875, 317), (0.75, 695), (0.75, 320), (0.75, 767), (0.75, 761), (0.75, 422), (0.75, 654), (0.75, 933), (0.75, 76), (0.75, 772), (0.75, 996), (0.75, 1044), (0.75, 659), (0.75, 806), (0.75, 590), (0.75, 319), (0.75, 708), (0.75, 775), (0.75, 44), (0.75, 660), (0.75, 1066), (0.75, 998), (0.75, 880), (0.75, 449), (0.75, 887), (0.75, 348), (0.75, 292), (0.75, 891), (0.75, 885), (0.75, 423), (0.75, 541), (0.75, 936), (0.75, 890), (0.75, 421), (0.75, 568), (0.75, 768), (0.75, 997), (0.75, 702), (0.75, 630), (0.75, 679), (0.75, 184), (0.75, 992), (0.75, 326), (0.75, 91), (0.75, 874), (0.75, 1002), (0.625, 1021), (0.625, 1014), (0.625, 1094), (0.625, 1024), (0.625, 1050), (0.625, 1036), (0.625, 1027), (0.625, 1041), (0.625, 1031), (0.5416666666666666, 1018), (0.5, 1060), (0.5, 1083), (0.5, 1089), (0.5, 1004), (0.5, 1082), (0.5, 1087), (0.5, 1084), (0.5, 1085), (0.41666666666666663, 1042), (0.375, 1016), (0.29166666666666663, 1040), (0.29166666666666663, 1035), (0.25, 1055), (0.16666666666666666, 1064), (0.16666666666666666, 1049), (0.16666666666666666, 1070), (0.16666666666666666, 1032)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 906
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 902
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 802
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 705
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 1006
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+[Generation 9]
+[Computing fitness]
+[(1.5, 906), (1.5, 1095), (1.375, 1100), (1.375, 1009), (1.375, 303), (1.375, 705), (1.375, 1102), (1.375, 1003), (1.375, 1103), (1.375, 902), (1.375, 1097), (1.375, 604), (1.375, 1101), (1.375, 393), (1.375, 803), (1.375, 802), (1.375, 758), (1.375, 1098), (1.375, 706), (1.375, 905), (1.375, 1007), (1.375, 904), (1.375, 1106), (1.375, 1006), (1.375, 503), (1.25, 264), (1.25, 929), (1.25, 607), (1.25, 1017), (1.25, 289), (1.25, 893), (1.25, 709), (1.25, 793), (1.25, 636), (1.25, 104), (1.25, 265), (1.25, 1063), (1.25, 908), (1.25, 812), (1.25, 911), (1.25, 1189), (1.25, 1110), (1.25, 608), (1.25, 1093), (1.25, 907), (1.25, 1111), (1.25, 617), (1.25, 1019), (1.25, 1013), (1.25, 428), (1.25, 1057), (1.125, 823), (1.125, 731), (1.125, 1168), (1.125, 315), (1.125, 342), (1.125, 1047), (1.125, 411), (1.125, 931), (1.125, 1181), (1.125, 400), (1.125, 520), (1.125, 1182), (1.125, 190), (1.125, 1161), (1.125, 521), (1.125, 1061), (1.125, 1059), (1.125, 1051), (1.125, 562), (1.125, 1056), (1.125, 827), (1.125, 33), (1.125, 618), (1.125, 715), (1.125, 817), (1.125, 913), (1.125, 774), (1.125, 402), (1.125, 1026), (1.125, 198), (1.125, 954), (1.125, 945), (1.125, 335), (1.125, 1126), (1.125, 820), (1.125, 1131), (1.125, 1149), (1.125, 1139), (1.125, 720), (1.125, 550), (1.125, 1120), (1.125, 141), (1.125, 1121), (1.125, 1028), (1.125, 1141), (1.125, 553), (1.125, 1162), (1.125, 947), (1.125, 917), (1.125, 952), (1.125, 12), (1.125, 273), (1.125, 826), (1.125, 825), (1.125, 724), (1.125, 1176), (1.125, 1135), (1.125, 837), (1.125, 626), (1.125, 713), (1.125, 242), (1.125, 804), (1.125, 1046), (1.125, 629), (1.125, 1174), (1.125, 1065), (1.125, 584), (1.125, 919), (1.125, 1158), (1.125, 1052), (1.125, 889), (1.125, 725), (1.125, 760), (1.125, 519), (1.125, 733), (1.125, 1058), (1.125, 451), (1.125, 1045), (1.125, 722), (1.125, 325), (1.125, 881), (1.125, 941), (1.125, 1029), (1.125, 839), (1.125, 677), (1.125, 935), (1.125, 942), (1.125, 401), (1.125, 818), (1.125, 507), (1.125, 824), (1.125, 329), (1.125, 1152), (1.125, 394), (1.125, 1062), (1.125, 688), (1.125, 1142), (1.125, 1054), (1.125, 834), (1.125, 1175), (1.125, 798), (1.125, 835), (1.125, 1038), (1.125, 591), (1.125, 5), (1.125, 921), (1.125, 611), (1.125, 981), (1.125, 1130), (1.125, 1033), (1.125, 396), (1.0, 965), (1.0, 961), (1.0, 243), (1.0, 1185), (1.0, 531), (1.0, 1079), (1.0, 807), (1.0, 235), (1.0, 983), (1.0, 736), (1.0, 864), (1.0, 1091), (1.0, 1129), (1.0, 1186), (1.0, 462), (1.0, 1128), (1.0, 212), (1.0, 310), (1.0, 579), (1.0, 31), (1.0, 1072), (1.0, 455), (1.0, 975), (1.0, 866), (1.0, 750), (1.0, 1080), (1.0, 186), (1.0, 949), (1.0, 416), (1.0, 957), (1.0, 865), (1.0, 1075), (1.0, 1115), (1.0, 1187), (1.0, 101), (1.0, 635), (1.0, 1023), (1.0, 748), (1.0, 30), (1.0, 741), (1.0, 980), (1.0, 529), (1.0, 1076), (1.0, 1011), (1.0, 78), (1.0, 1086), (1.0, 1195), (1.0, 966), (1.0, 1156), (1.0, 848), (1.0, 861), (1.0, 595), (1.0, 1073), (1.0, 964), (1.0, 1074), (1.0, 1067), (1.0, 985), (1.0, 1039), (1.0, 1078), (1.0, 67), (1.0, 620), (1.0, 847), (1.0, 1043), (1.0, 973), (1.0, 1092), (1.0, 1068), (1.0, 751), (1.0, 267), (1.0, 1053), (1.0, 978), (1.0, 854), (1.0, 680), (1.0, 726), (1.0, 406), (1.0, 743), (1.0, 408), (1.0, 637), (1.0, 986), (1.0, 311), (1.0, 524), (1.0, 930), (1.0, 313), (1.0, 34), (1.0, 347), (1.0, 415), (0.875, 990), (0.875, 754), (0.875, 894), (0.875, 651), (0.875, 200), (0.875, 534), (0.875, 647), (0.875, 537), (0.875, 87), (0.875, 950), (0.875, 504), (0.875, 873), (0.875, 994), (0.875, 993), (0.875, 757), (0.875, 869), (0.875, 991), (0.75, 1184), (0.75, 1148), (0.75, 1113), (0.625, 1151), (0.625, 1178), (0.625, 1143), (0.625, 1157), (0.625, 1171), (0.625, 1116), (0.625, 1165), (0.625, 1193), (0.625, 1167), (0.625, 1146), (0.625, 1154), (0.625, 1140), (0.625, 1137), (0.625, 1124), (0.625, 1173), (0.5416666666666666, 1119), (0.5, 1194), (0.5, 1105), (0.5, 1190), (0.5, 1133), (0.5, 1191), (0.41666666666666663, 1180), (0.375, 1108), (0.375, 1170), (0.375, 1122), (0.375, 1166), (0.375, 1164), (0.375, 1145), (0.375, 1136), (0.375, 1163), (0.29166666666666663, 1134), (0.29166666666666663, 1117), (0.16666666666666666, 1159)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 906
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 1095
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 1100
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 1009
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 303
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+[Generation 10]
+[Computing fitness]
+[(1.5, 906), (1.5, 1196), (1.5, 1095), (1.375, 706), (1.375, 904), (1.375, 758), (1.375, 802), (1.375, 1209), (1.375, 1103), (1.375, 1101), (1.375, 1197), (1.375, 1009), (1.375, 1208), (1.375, 1098), (1.375, 1201), (1.375, 1202), (1.375, 902), (1.375, 1003), (1.375, 1198), (1.375, 1102), (1.375, 604), (1.375, 1100), (1.375, 303), (1.375, 503), (1.375, 1007), (1.375, 1203), (1.375, 905), (1.375, 1199), (1.375, 1006), (1.375, 1097), (1.375, 393), (1.375, 1106), (1.375, 803), (1.375, 1207), (1.375, 705), (1.25, 1019), (1.25, 1223), (1.25, 1228), (1.25, 428), (1.25, 1013), (1.25, 636), (1.25, 1279), (1.25, 1221), (1.25, 1057), (1.25, 709), (1.25, 929), (1.25, 893), (1.25, 104), (1.25, 1110), (1.25, 289), (1.25, 908), (1.25, 1216), (1.25, 793), (1.25, 1212), (1.25, 265), (1.25, 264), (1.25, 1017), (1.25, 907), (1.25, 911), (1.25, 1063), (1.25, 1111), (1.25, 1213), (1.25, 812), (1.25, 607), (1.25, 1210), (1.25, 617), (1.25, 1220), (1.25, 1218), (1.25, 608), (1.25, 1093), (1.25, 1189), (1.125, 1135), (1.125, 945), (1.125, 1181), (1.125, 1051), (1.125, 1231), (1.125, 731), (1.125, 839), (1.125, 1062), (1.125, 1120), (1.125, 981), (1.125, 720), (1.125, 760), (1.125, 825), (1.125, 394), (1.125, 1131), (1.125, 1161), (1.125, 818), (1.125, 1056), (1.125, 550), (1.125, 947), (1.125, 931), (1.125, 1052), (1.125, 917), (1.125, 1176), (1.125, 400), (1.125, 1246), (1.125, 396), (1.125, 722), (1.125, 1286), (1.125, 1233), (1.125, 521), (1.125, 1038), (1.125, 507), (1.125, 1236), (1.125, 1227), (1.125, 611), (1.125, 402), (1.125, 1291), (1.125, 401), (1.125, 12), (1.125, 342), (1.125, 1247), (1.125, 913), (1.125, 242), (1.125, 1273), (1.125, 1142), (1.125, 1274), (1.125, 733), (1.125, 141), (1.125, 1028), (1.125, 1168), (1.125, 1026), (1.125, 1141), (1.125, 837), (1.125, 1065), (1.125, 1225), (1.125, 329), (1.125, 954), (1.125, 315), (1.125, 1271), (1.125, 820), (1.125, 804), (1.125, 798), (1.125, 33), (1.125, 1262), (1.125, 724), (1.125, 826), (1.125, 411), (1.125, 677), (1.125, 1149), (1.125, 824), (1.125, 1224), (1.125, 1280), (1.125, 1278), (1.125, 1152), (1.125, 1045), (1.125, 584), (1.125, 835), (1.125, 1061), (1.125, 626), (1.125, 5), (1.125, 1257), (1.125, 921), (1.125, 519), (1.125, 591), (1.125, 562), (1.125, 688), (1.125, 1033), (1.125, 774), (1.125, 952), (1.125, 1029), (1.125, 823), (1.125, 1058), (1.125, 834), (1.125, 335), (1.125, 941), (1.125, 1059), (1.125, 942), (1.125, 1249), (1.125, 190), (1.125, 1126), (1.125, 1266), (1.125, 827), (1.125, 618), (1.125, 919), (1.125, 325), (1.125, 1174), (1.125, 273), (1.125, 1285), (1.125, 1175), (1.125, 935), (1.125, 520), (1.125, 1054), (1.125, 715), (1.125, 1242), (1.125, 725), (1.125, 889), (1.125, 1047), (1.125, 1139), (1.125, 1250), (1.125, 198), (1.125, 553), (1.125, 629), (1.125, 451), (1.125, 881), (1.125, 1255), (1.125, 1158), (1.125, 1046), (1.125, 1130), (1.125, 1162), (1.125, 1121), (1.125, 713), (1.125, 1182), (1.125, 817), (1.0, 1067), (1.0, 186), (1.0, 1195), (1.0, 983), (1.0, 1073), (1.0, 750), (1.0, 865), (1.0, 235), (1.0, 961), (1.0, 620), (1.0, 1023), (1.0, 1129), (1.0, 455), (1.0, 1079), (1.0, 741), (1.0, 861), (1.0, 848), (1.0, 579), (1.0, 531), (1.0, 964), (1.0, 748), (1.0, 310), (1.0, 101), (1.0, 864), (1.0, 1072), (1.0, 1289), (1.0, 1185), (1.0, 1043), (1.0, 635), (1.0, 1011), (1.0, 78), (1.0, 416), (1.0, 1086), (1.0, 965), (1.0, 1186), (1.0, 1091), (1.0, 847), (1.0, 1039), (1.0, 31), (1.0, 949), (1.0, 957), (1.0, 1115), (1.0, 595), (1.0, 980), (1.0, 212), (1.0, 807), (1.0, 985), (1.0, 1078), (1.0, 1187), (1.0, 1080), (1.0, 67), (1.0, 975), (1.0, 529), (1.0, 1076), (1.0, 30), (1.0, 243), (1.0, 1240), (1.0, 736), (1.0, 966), (1.0, 1075), (1.0, 1074), (1.0, 1128), (1.0, 866), (1.0, 1156), (1.0, 462), (0.75, 1229), (0.75, 1263), (0.75, 1205), (0.75, 1215), (0.75, 1234), (0.625, 1253), (0.625, 1244), (0.625, 1219), (0.625, 1269), (0.625, 1288), (0.625, 1235), (0.625, 1277), (0.625, 1284), (0.625, 1275), (0.625, 1282), (0.625, 1237), (0.625, 1211), (0.625, 1265), (0.5416666666666666, 1217), (0.5, 1276), (0.5, 1260), (0.5, 1206), (0.41666666666666663, 1270), (0.41666666666666663, 1239), (0.375, 1268), (0.375, 1222), (0.375, 1281), (0.375, 1259), (0.29166666666666663, 1252), (0.25, 1272)]
+[Cross-over]
+Top 5 candidates:
+(CANDIDATE)[id: 906
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 1196
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 1095
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(- ? ?)`x`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (- x (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 706
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+(CANDIDATE)[id: 904
+ encoding: (defun my_func (x y) ?)`(+ ? ?)`(+ ? ?)`y`#`#`(* ? ?)`(* ? ?)`6`#`#`y`#`#`x`#`#`x`#`#`#
+ s_expr: (defun my_func (x y) (+ (+ y (* (* 6 y) x)) x))
+ nr_nodes: 10]
+[Generation 11]
+[Computing fitness]
+Found ideal candidate: (defun my_func (x y) (+ (- y (* (* 6 y) x)) x))
+
+Process finished with exit code 0

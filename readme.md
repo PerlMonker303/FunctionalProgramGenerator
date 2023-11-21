@@ -13,13 +13,12 @@ Developed for the AI in Software Engineering course for my MSc. course.
 - inserted perfect candidate in initial pool and see what happens
 - cache fitness computations for candidates without changes - use unique candidate ids
 - improved mutation fairness
-
-## TODOs:
-- (DEPRECATED) more operators: cutting a list (cdr or car or something) - depends on what data is used
-- apply on github with real LISP code (ex: https://github.com/Pufcorina/Functional-and-Logic-Programming/blob/master/L1/11.lisp) 
+- add similarity coefficient computation in fitness function (ex: https://www.mdpi.com/2076-3417/11/10/4673)
+  - caching won't work this way, cause the fitness of an individual is dependent on all other individuals now
 
 ## Notes:
 - "Null" checks whether a list is empty or not.
 - consider idea: take some existing LISP code, evaluate it, scan it, then generate it.
 - SBCL command for factorial program 
 sbcl --noinform --eval "(defun factorial (n) (cond ((zerop n) 1) (t (* n (factorial (- n 1))))))" --eval "(print (factorial 3))" --quit --disable-debugger
+  

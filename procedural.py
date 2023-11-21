@@ -163,6 +163,8 @@ def evaluate_expression(exp, env=None, depth=0, tokens=None):
 
 
 def eval_sexpression(sexpr, add_function_call=False, f_name="factorial", input=0):
+    if isinstance(input, tuple):
+        input = f"{input[0]} {input[1]}"
     if add_function_call:
         params_list = ["C:\Program Files\Steel Bank Common Lisp\sbcl.exe",
                        "--noinform",  # skip printing initial strings

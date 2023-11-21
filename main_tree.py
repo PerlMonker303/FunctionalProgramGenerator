@@ -5,12 +5,15 @@ from test_case import TestCase
 from binary_tree import BinaryTreeCoder, Node
 from procedural import eval_sexpression
 from candidate import Candidate, compute_nr_nodes
+from bac_functions import bac_functions
 
-GENE_DEPTH = 11
+ID = 15
+GENE_DEPTH = bac_functions[ID]["gene_depth"]
+IDEAL_NR_NODES = bac_functions[ID]["ideal_nr_nodes"]
 INSERT_IDEAL_CANDIDATE_IN_INITIAL_POOL = False
 USE_SHRINK_MUTATION = False
 USE_SWAP_MUTATION = True
-
+USE_DIVERSITY = False
 
 class GeneticAlgorithmTree:
     def __init__(self, num_generations=100, pool_size=50, num_parents_mating=20, mutation_chance=0.3, test_cases=[],
@@ -50,7 +53,7 @@ class GeneticAlgorithmTree:
 
         # Then, generate random tokens. Keep track of open and closed brackets.
         candidate = []
-        st = [("(defun factorial (n) ?)", 0)]  # tuple (value, depth)
+        st = [(bac_functions[ID]["first_node"], 0)]  # tuple (value, depth)
         while len(st) > 0:
             gene_i, depth = st.pop()
             if depth > max_depth:
@@ -105,7 +108,8 @@ class GeneticAlgorithmTree:
             candidates_pool.append(self.create_candidate())
         if INSERT_IDEAL_CANDIDATE_IN_INITIAL_POOL:
             candidates_pool = candidates_pool[:-1]
-            ideal_candidate_encoding = "(defun factorial (n) ?)`(cond ? ?)`(? ?)`(zerop n)`#`#`1`#`#`(t ?)`(* ? ?)`n`#`#`(factorial ?)`(- ? ?)`n`#`#`1`#`#`#`#`#"
+            # ideal_candidate_encoding = "(defun factorial (n) ?)`(cond ? ?)`(? ?)`(zerop n)`#`#`1`#`#`(t ?)`(* ? ?)`n`#`#`(factorial ?)`(- ? ?)`n`#`#`1`#`#`#`#`#"
+            ideal_candidate_encoding = "(defun my_func (x y) ?)`(- ? ?)`(+ ? ?)`x`#`#`y`#`#`4`#`#`#"
             root = self.btc.decode(ideal_candidate_encoding)
             s_expr = self.btc.get_lisp_expression(root)
             candidates_pool.append(
@@ -120,13 +124,56 @@ class GeneticAlgorithmTree:
             print(c)
         return candidates_pool
 
-    def get_fitness(self, candidate):
+    def get_diversity_score(self, candidate, candidates_pool):
+        diversity_score = 0
+        for c in candidates_pool:
+            # compute diversity between candidate and c
+            diversity_score += self.tree_edit_distance(candidate, c)
+        return diversity_score
+
+    def tree_edit_distance(self, candidate1, candidate2):
+        n = candidate1.get_nr_nodes()
+        m = candidate2.get_nr_nodes()
+
+        # Initialize a matrix to store edit distances
+        dp = [[0] * (m + 1) for _ in range(n + 1)]
+
+        # Fill in the base cases
+        for i in range(n + 1):
+            dp[i][0] = i
+
+        for j in range(m + 1):
+            dp[0][j] = j
+
+        # Fill in the matrix
+        for i in range(1, n + 1):
+            for j in range(1, m + 1):
+                # Define your cost function based on operations (insert, delete, substitute)
+                cost = self.calculate_cost(candidate1.get_encoding()[i - 1], candidate2.get_encoding()[j - 1])
+
+                dp[i][j] = min(
+                    dp[i - 1][j] + 1,  # Deletion
+                    dp[i][j - 1] + 1,  # Insertion
+                    dp[i - 1][j - 1] + cost  # Substitution
+                )
+
+        return dp[n][m]
+
+    # Helper function to calculate the cost based on node comparison
+    def calculate_cost(self, node1, node2):
+        # Your cost function based on node comparison (e.g., labels, values)
+        return 0 if node1 == node2 else 1
+
+    def get_fitness(self, candidate, candidates_pool):
 
         score = 0
 
+        if USE_DIVERSITY:
+            # Compute diversity
+            score += self.get_diversity_score(candidate, candidates_pool) / 1000
+
         # Compare tree sizes
-        ideal_nr_nodes = 12
-        numerator = abs(candidate.get_nr_nodes() - ideal_nr_nodes)
+        numerator = abs(candidate.get_nr_nodes() - IDEAL_NR_NODES)
         if numerator == 0:
             score += 1
         else:
@@ -137,7 +184,7 @@ class GeneticAlgorithmTree:
         for test_case in self.test_cases:
             inp = test_case.get_input()
             try:
-                output = eval_sexpression(candidate.get_s_expr(), add_function_call=True, f_name="factorial", input=inp)
+                output = eval_sexpression(candidate.get_s_expr(), add_function_call=True, f_name="my_func", input=inp)
                 output = int(output)  # Convert to int to match expected outputs. If not possible, broken program.
                 # print(output, '-----', s_expr)
             except:
@@ -148,9 +195,12 @@ class GeneticAlgorithmTree:
 
         # Return percentage of passed test cases
         percentage_tc_passed = passed_test_cases / len(self.test_cases)
+        if percentage_tc_passed == 1:
+            print("Found ideal candidate:", candidate.get_s_expr())
+            exit(0)
         score += percentage_tc_passed
-        if percentage_tc_passed > 0.0:
-            print("!!!!!!!", candidate.get_s_expr())
+        # if percentage_tc_passed > 0.0:
+        #     print("!!!!!!!", candidate.get_s_expr())
 
         return score
 
@@ -299,9 +349,6 @@ class GeneticAlgorithmTree:
         node.right = self.mutate_swap_recursive(node.right, node, 1, threshold_select, swapped)
         return node
 
-
-
-
     def create_candidates_pool_map(self, candidates_pool):
         # Map candidate id to location in candidates pool
         mp = {}
@@ -328,8 +375,9 @@ class GeneticAlgorithmTree:
             fitness_scores = []
             for candidate in candidates_pool:
                 candidate_id = candidate.get_id()
-                if candidate_id not in cache_fitness_scores:
-                    cache_fitness_scores[candidate_id] = self.get_fitness(candidate)
+                if candidate_id not in cache_fitness_scores or USE_DIVERSITY:
+                    # When diversity is True, always recompute the fitness
+                    cache_fitness_scores[candidate_id] = self.get_fitness(candidate, candidates_pool)
                 fitness_scores.append((cache_fitness_scores[candidate_id], candidate_id))
 
             # Take candidates pool and compute their fitness
@@ -404,36 +452,19 @@ class GeneticAlgorithmTree:
 
 
 def main():
+
     # Specify test cases
-    test_cases = [
-        # TestCase(1, 1),
-        # TestCase(2, 2),
-        TestCase(3, 6),
-        TestCase(4, 24),
-        TestCase(5, 120),
-        TestCase(6, 720)
-    ]
+    test_cases = [TestCase(tc[0], tc[1]) for tc in bac_functions[ID]["test_cases"]]
 
     # Start from predefined s_expressions to use
-    s_expressions = {#"(defun factorial (n) ?)",  # Start with hard-coded version here
-                     "(cond ? ?)",
-                     "(? ?)",
-                     "(zerop n)",
-                     "1",
-                     "(t ?)",
-                     "(* ? ?)",
-                     "n",
-                     "(factorial ?)",
-                     "(- ? ?)",
-                     "n",
-                     "1"}
+    s_expressions = bac_functions[ID]["s_expressions"]
 
     # Create Genetic Algorithm instance
     ga = GeneticAlgorithmTree(
-        num_generations=100,
-        pool_size=1000,
-        num_parents_mating=500,
-        mutation_chance=0.5,
+        num_generations=35,
+        pool_size=400,
+        num_parents_mating=150,
+        mutation_chance=0.7,
         test_cases=test_cases,
         s_expressions=s_expressions
     )
@@ -441,5 +472,6 @@ def main():
 
 
 if __name__ == "__main__":
-    random.seed(0)
-    main()
+    for s in range(4):
+        random.seed(s)
+        main()
